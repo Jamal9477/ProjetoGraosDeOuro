@@ -12,10 +12,10 @@ body {
 
 .menuLateral {
     margin: 0;
-    background-color: rgb(225, 199, 151);
+    background-color: rgb(169, 156, 156);
     border: 1px solid black;
     height: 110vh;
-    width: 80px;
+    width: 70px;
     gap: 10px;
     display: grid;
     grid-template-columns: 70px;
@@ -121,8 +121,8 @@ h4 {
     top: 60px;
     left: 71px;
     z-index: 2;
-    height: 620px;
-    width: 900px;
+    height: 1000px;
+    width: 1450px;
 }
 
 .menudeEscolha {
@@ -131,8 +131,8 @@ h4 {
     position: absolute;
     background-color: yellow;
     border-radius: 10px;
-    height: 430px;
-    width: 870px;
+    height: 820px;
+    width: 1420px;
     left: 15px;
     top: 100px;
 }
@@ -144,8 +144,8 @@ h4 {
 .linhadePesquisa {
     background-color: pink;
     position: absolute;
-    height: 60px;
-    width: 870px;
+    height: 80px;
+    width: 1420px;
     border-radius: 10px;
     left: 15px;
     top: 10px;
@@ -154,10 +154,10 @@ h4 {
 .texto {
     border-radius: 8px;
     position: absolute;
-    left: 250px;
+    left: 450px;
     top: 15px;
-    height: 25px;
-    width: 250px;
+    height: 40px;
+    width: 500px;
     border: 0.050rem solid transparent;
 }
 
@@ -172,31 +172,31 @@ h4 {
 }
 
 .bi-arrow-left {
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
-    top: 20px;
-    left: 15px;
+    top: 25px;
+    left: 40px;
 }
 
 .voltar {
     position: absolute;
-    top: 21px;
-    left: 38px;
-    font-size: 16px;
+    top: 22px;
+    left: 80px;
+    font-size: 30px;
 }
 
 .bi-toggle-off {
     position: absolute;
-    top: 10px;
-    left: 600px;
-    font-size: 30px;
+    top: 20px;
+    left: 1100px;
+    font-size: 40px;
 }
 
 .exibir {
     position: absolute;
-    left: 635px;
-    top: 17px;
-    font-size: 18px;
+    left: 1150px;
+    top: 26px;
+    font-size: 25px;
 }
 
 .bi-search {
@@ -264,34 +264,24 @@ h4 {
     top: 10px;
 }
 
-.botaodeCompra {
+
+.menuDiario {
+    background-color: rgb(255, 224, 224);
     position: absolute;
-    background-color: aqua;
-    height: 60px;
-    width: 860px;
-    top: 532px;
-    left: 20px;
-    border-radius: 10px;
+    height: 200px;
+    width: 1395px;
+    left: 15px;
+    top: 10px;
+    border-radius: 20PX;
 }
 
-.botao {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 40px;
-    width: 840px;
-    border-radius: 10px;
-    color: white;
-    background-color: red;
-    border: none;
-}
 
 .img1 {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 5px;
+    top: 15px;
     border-radius: 10px;
-    left: 40px;
+    left: 50px;
     width: 150px;
     height: 160px;
     display: flex;
@@ -300,6 +290,7 @@ h4 {
     justify-items: center;
     text-align: center;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .img1:hover {
@@ -308,9 +299,54 @@ h4 {
 }
 
 .img2 {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 5px;
+    top: 15px;
+    border-radius: 10px;
+    left: 260px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.img2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img3 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 460px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.img3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.img4 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
     border-radius: 10px;
     left: 670px;
     width: 150px;
@@ -321,51 +357,54 @@ h4 {
     justify-items: center;
     text-align: center;
     transition: 0.5s;
-}
-
-.img2:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.img3 {
-    background-color: red;
-    position: absolute;
-    top: 5px;
-    border-radius: 10px;
-    left: 230px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.img3:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.img4 {
-    background-color: red;
-    position: absolute;
-    top: 5px;
-    border-radius: 10px;
-    left: 430px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
+    cursor: pointer;
 }
 
 .img4:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img5 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 880px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.img5:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img6 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 1090px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.img6:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -375,129 +414,62 @@ h4 {
     top: 100px;
 }
 
-.menuLateralItensPrimarios button {
-    background-color: #763f22;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: 1px solid black;
-    box-shadow: 1px 1px 5px 1px;
-    transition: 0.3s;
-}
-
-.menuLateralItensPrimarios button:hover {
-    background-color: rgb(112, 71, 26);
-    box-shadow: 2px 2px 6px 2px rgb(136, 107, 71);
-    transition: 0.3s;
+.nextCard {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1290px;
+    top: 50px;
+    border-radius: 10px;
+    transition: 0.5s;
     cursor: pointer;
 }
 
-.menuLateralItensPrimarios {
-    gap: 10px;
-    margin-top: 10px;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
+.nextCard:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.menuLateralItensSecundarios button {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 60px;
-    height: 50px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 1px solid black;
-    background-color: #763f22;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 1px 1px 4px 1px;
+.bi-caret-right {
+    font-size: 70px;
 }
 
-.menuLateralItensSecundarios button:hover {
-    background-color: rgb(171, 115, 56);
-    box-shadow: 2px 2px 6px 2px rgb(136, 107, 71);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.menuLateralItensSecundarios button i {
-    margin-left: 1px;
-    margin-top: 5px;
-}
-
-.menuLateralItensSecundarios {
-    justify-self: center;
-    gap: 12px;
-    display: flex;
-    flex-direction: column;
-}
-
-.addAmout {
-    /*botoes de quantia*/
-    position: relative;
-    margin-left: 20px;
-    display: flex;
-    background-color: snow;
-    width: 80px;
-    height: 22px;
-    border-radius: 10px 10px 10px 10px;
-    text-align: center;
-}
-
-.addAmout input {
+.botaodeCompra {
     position: absolute;
-    left: 26px;
-    top: 2px;
-    height: min-content;
-    background-color: wheat;
-    height: 16px;
-    width: 24px;
+    background-color: aqua;
+    height: 60px;
+    width: 1415px;
+    top: 927px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.menuComidas {
+    background-color: orange;
+    position: absolute;
+    height: 570px;
+    width: 1390px;
+    left: 20px;
+    top: 230px;
+    border-radius: 10px;
+}
+
+
+
+.botao {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 1390px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
     border: none;
-    border-radius: 2px;
-    text-align: center;
+    transition: 0.5s;
 }
 
-.add {
-    /*adicionar_Quantia*/
-    position: absolute;
-    left: 56px;
-    border-radius: 0px 10px 10px 0px;
-    width: 24px;
-    height: 22px;
-    border: none;
-    background-color: rgba(0, 0, 255, 0);
-    color: #763f22;
-    transition: 0.1s;
-}
-
-.remove {
-    /*remover_quantia*/
-    position: absolute;
-    left: 0;
-    border-radius: 10px 0px 0px 10px;
-    width: 24px;
-    height: 22px;
-    border: none;
-    background-color: rgba(0, 0, 255, 0);
-    color: #763f22;
-    transition: 0.1s;
-}
-
-.remove i,
-.add i {
-    /*centralizacao*/
-    position: absolute;
-    top: 4px;
-    left: 5px;
-}
-
-.add:hover,
-.remove:hover {
-    /*anmt_fundoAdd*/
-    background-color: #763f22;
-    color: black;
-    transition: 0.1s;
+.botao:hover {
+    scale: 1.010;
+    background-color: rgb(146, 19, 19);
+    transition: 0.5s;
 }
