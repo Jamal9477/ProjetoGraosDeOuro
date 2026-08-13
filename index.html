@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/Css/styleFODAE.css">
+    <title>FODASE-Grãos de Ouro-FODASE</title>
+</head>
+<style>
+</style>
+<style> /*caracteristica input*/
+    input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style>
+<style></style>
+
+<body>
+
+    <section class="menuLateral">
+        <nav class="menuLateralItensPrimarios">
+            <button id="caralho"><i style="font-size: 30px;" class="bi bi-list"></i></button>
+            <button style="margin: 0; text-align: center;"><img
+                    style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png" alt=""></button>
+        </nav>
+        <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
+        <nav style="margin-top: 20px; text-align: center;" class="menuLateralItensSecundarios">
+            <button
+                style="display: flex; flex-direction: column; text-align: center; "><i
+                    style="font-size: 15px; margin-top: 0px; margin-left: 3px;" class="bi bi-search"></i></button>
+            <button
+                style="display: flex; flex-direction: column; margin: 0; text-align: center; "><i
+                    style="font-size: 15px;" class="bi bi-fork-knife"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Refeições</p>
+            </button>
+            <button
+                style="display: flex; flex-direction: column; margin: 0; text-align: center; "><i
+                    style="font-size: 15px;" class="bi bi-car-front-fill"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Delivery</p>
+            </button>
+            <button
+                style="display: flex; flex-direction: column;; margin: 0; text-align: center; "><i
+                    style="font-size: 15px;" class="bi bi-person-vcard"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Cadastro</p>
+            </button>
+            <button
+                style="display: flex; flex-direction: column; margin: 0; text-align: center;"><i
+                    style="font-size: 15px;" class="bi bi-columns-gap"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Ver mais</p>
+            </button>
+        </nav>
+        <div style="background-color: red; height: 30px;"></div>
+        <nav style="text-align: center;" class="menuLateralItensTerciarios">
+            <button
+                style="display: flex; flex-direction: column; margin: 0; text-align: center; height: 50px; width: 70px;"><i
+                    style="font-size: 20px;" class="bi bi-question-circle"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Suporte</p>
+            </button>
+            <button
+                style="display: flex; flex-direction: column; margin: 0; text-align: center; height: 50px; width: 70px;"><i
+                    style="font-size: 20px;" class="bi bi-box-arrow-right"></i>
+                <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Deslogar</p>
+            </button>
+        </nav>
+    </section>
+
+    <header class="standart">
+        <nav style="display: flex;" class="standartItemPrincipal">
+            <button style="display: flex; flex-direction: column; height: 40px;"><i class="bi bi-qr-code"></i>
+                <p style="margin: 0; font-size: 11px;">Cardápio Digital</p>
+            </button>
+            <button style="display: flex; flex-direction: column; height: 40px;"><i class="bi bi-whatsapp"></i>
+                <p style="margin: 0; font-size: 11px;">Envie uma mensagem</p>
+            </button>
+        </nav>
+        <h3>Cafeteria Grãos de Ouro</h3>
+
+        <img style="height: 55px;" src="assets/Css/ImagesCss/PageTitle1.png" alt="">
+
+        <nav style="display: flex;" class="standartItemSecundario">
+            <button id="caralho" class="fodase" style="display: flex; text-align: center; height: 50px;">
+                <div id="meuMenu" class="menu-escondido">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dicta voluptatibus animi
+                        neque esse cumque quisquam nisi porro facere est commodi vero culpa officia itaque incidunt,
+                        libero ducimus quaerat qui.</p>
+                </div>
+                <div class="item">
+                    <h4>Status</h5>
+                        <h5>Delivery ON</h6>
+                            <h6>Delivery OFF</h6>
+                </div>
+                <i class="bi bi-gear-fill"></i>
+            </button>
+            <button style="display: flex; flex-direction: column; height: 40px;">
+                <h3>Garçom Digital</h3>
+                <i class="bi bi-toggle-on"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="itemsPricinpais">
+
+        <div class="linhadePesquisa">
+            <i class="bi bi-arrow-left"></i>
+            <h5 class="voltar">voltar</h5>
+            <input class="texto" type="text" placeholder="Busque produtos...">
+            <i class="bi bi-toggle-off"></i>
+            <h5 class="exibir">Exibir imagem</h5>
+        </div>
+
+
+        <div class="menudeEscolha">
+            <span class="img3">
+                <span class="imgdeCafe"></span>
+                <h2 class="nome">rapaz</h2>
+            </span>
+            <span class="img2">
+                <span class="imgdeFOdase"></span>
+                <h2 class="nome">CAFÉ</h2>
+            </span>
+            <span class="img1">
+                <span class="imgdeFadase"></span>
+                <h2 class="nome">omaga</h2>
+            </span>
+            <span class="img4">
+                <span class="imgdeFese"></span>
+            </span>
+            <span class="img">
+                <span class="imgdeFase"></span>
+                <h1></h1>
+            </span>
+        </div>
+
+        <div class="botaodeCompra">
+            <button class="botao">Fazer Pedido</button>
+        </div>
+
+
+    <section class="">
+            <header>
+                <h5>Mesa 1</h5>
+                <button>Transferir</button>
+                <button>Imprimir</button>
+            </header>
+        <main>
+            <div>
+                    <h6>Pedir para</h6>
+                <div>
+                    <span>.</span>
+                </div>
+            </div>
+            <div>
+                <div class="addAmout">
+                    <button class="remove"><i class="bi bi-dash"></i></button>
+                    <input type="number" placeholder="0">
+                    <button class="add"><i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    </main>
+
+<script>
+    const botaoMenu = document.getElementById("caralho");
+    const meuMenu = document.getElementById("meuMenu");
+        
+    botaoMenu.addEventListener("click", function() {
+          // O toggle adiciona a classe se ela não existir, e remove se ela já existir
+          meuMenu.classList.toggle("menu-escondido");
+        });
+        
+</script>
+</body>
+</html>
