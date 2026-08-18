@@ -465,16 +465,6 @@ h4 {
 }
 
 
-.menuComidas {
-    background-color: rgb(255, 102, 0);
-    position: absolute;
-    height: 480px;
-    width: 1396px;
-    left: 15px;
-    top: 230px;
-    border-radius: 10px;
-    display: grid;
-}
 
 .botaodeCompra {
     position: absolute;
@@ -500,20 +490,32 @@ h4 {
     transition: 0.5s;
 }
 
+
 .botao:hover {
     scale: 1.010;
     background-color: rgb(146, 19, 19);
     transition: 0.5s;
 }
 
-.cafe{
-    background-color: rgb(255, 255, 255);
+.menuComidas {
+    background-color: rgb(255, 102, 0);
     position: absolute;
-    top: 15px;
+    height: 480px;
+    width: 1396px;
+    left: 15px;
+    top: 230px;
     border-radius: 10px;
-    left: 30px;
-    width: 150px;
-    height: 160px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 160px;
+    height: 190px;
     display: flex;
     flex-direction: colum;
     justify-content: center;
@@ -523,42 +525,17 @@ h4 {
     cursor: pointer;
 }
 
-.cafe:hove{
-    transition: 0.5s;
+.card:hover{
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.espreco{
-    background-color: rgb(255, 255, 255);
+.rapaz{
     position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 200px;
-    width: 150px;
-    height: 160px;
+    top: 470px;
+    left: 35px;
+    height: 200px;
+    width: 1380px;
+    justify-content: space-evenly;
     display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-
-.caputino{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 370px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
 }
