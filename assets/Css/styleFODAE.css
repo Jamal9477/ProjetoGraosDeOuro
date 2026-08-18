@@ -29,7 +29,7 @@ body {
     display: flex;
     position: absolute;
     background-color: red;
-    width: 1400px;
+    width: 1451px;
     height: 60px;
     top: 0;
     left: 70px;
@@ -205,13 +205,39 @@ h4 {
     left: 25px;
 }
 
-
-
-.imgdeCafe {
-    background-image: url(img/cafe.jpg);
+.imgdeFadase {
+    background: url(img/cafecomleite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -48px 0;
+    background-position: px 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    border: none;
+    transition: 0.3s;
+    position: absolute;
+    top: 10px;
+}
+
+.imgdeFese {
+    background: url(img/cafecomleite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: px 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    border: none;
+    transition: 0.3s;
+    position: absolute;
+    top: 10px;
+}
+
+.imgdeCafe {
+    background-image: url(img/cafecomleite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: px 0;
     height: 100px;
     width: 100px;
     border-radius: 70px;
@@ -223,10 +249,10 @@ h4 {
 }
 
 .imgdeFOdase {
-    background: url(img/cafe.jpg);
+    background: url(img/cafecomleite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -48px 0;
+    background-position: px 0;
     height: 100px;
     width: 100px;
     border-radius: 70px;
@@ -236,11 +262,11 @@ h4 {
     top: 10px;
 }
 
-.imgdeFadase {
-    background: url(img/cafe.jpg);
+.imgdecomida {
+    background: url(img/cafecomleite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -48px 0;
+    background-position: px 0;
     height: 100px;
     width: 100px;
     border-radius: 70px;
@@ -250,11 +276,11 @@ h4 {
     top: 10px;
 }
 
-.imgdeFese {
-    background: url(img/cafe.jpg);
+.imgdefrase {
+    background: url(img/cafecomleite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -48px 0;
+    background-position: px 0;
     height: 100px;
     width: 100px;
     border-radius: 70px;
@@ -263,7 +289,6 @@ h4 {
     position: absolute;
     top: 10px;
 }
-
 
 .menuDiario {
     background-color: rgb(255, 224, 224);
@@ -296,6 +321,7 @@ h4 {
 .img1:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .img2 {
@@ -318,6 +344,7 @@ h4 {
 .img2:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .img3 {
@@ -340,6 +367,7 @@ h4 {
 .img3:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 
@@ -363,6 +391,7 @@ h4 {
 .img4:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .img5 {
@@ -385,6 +414,7 @@ h4 {
 .img5:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .img6 {
@@ -407,6 +437,7 @@ h4 {
 .img6:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border: 2px solid black;
 }
 
 .nome {
@@ -433,34 +464,35 @@ h4 {
     font-size: 70px;
 }
 
+
+.menuComidas {
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+    height: 480px;
+    width: 1396px;
+    left: 15px;
+    top: 230px;
+    border-radius: 10px;
+    display: grid;
+}
+
 .botaodeCompra {
     position: absolute;
     background-color: aqua;
     height: 60px;
-    width: 1415px;
-    top: 927px;
-    left: 20px;
+    width: 1398px;
+    top: 820px;
+    left: 28px;
     border-radius: 10px;
 }
-
-.menuComidas {
-    background-color: orange;
-    position: absolute;
-    height: 570px;
-    width: 1390px;
-    left: 20px;
-    top: 230px;
-    border-radius: 10px;
-}
-
 
 
 .botao {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 20px;
     height: 40px;
-    width: 1390px;
+    width: 1360px;
     border-radius: 10px;
     color: white;
     background-color: red;
@@ -472,4 +504,61 @@ h4 {
     scale: 1.010;
     background-color: rgb(146, 19, 19);
     transition: 0.5s;
+}
+
+.cafe{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 30px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cafe:hove{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.espreco{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 200px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.caputino{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    border-radius: 10px;
+    left: 370px;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
 }
