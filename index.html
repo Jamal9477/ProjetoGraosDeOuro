@@ -66,10 +66,12 @@
 
     <header class="standart">
         <nav style="display: flex;" class="standartItemPrincipal">
-            <button style="display: flex; flex-direction: column; height: 40px;"><i class="bi bi-qr-code"></i>
+            <button class="btnPrincipal" style="display: flex; flex-direction: column; height: 40px;"><i
+                    class="bi bi-qr-code"></i>
                 <p style="margin: 0; font-size: 11px;">Cardápio Digital</p>
             </button>
-            <button style="display: flex; flex-direction: column; height: 40px;"><i class="bi bi-whatsapp"></i>
+            <button class="btnPrincipal" style="display: flex; flex-direction: column; height: 40px;"><i
+                    class="bi bi-whatsapp"></i>
                 <p style="margin: 0; font-size: 11px;">Envie uma mensagem</p>
             </button>
         </nav>
@@ -78,19 +80,13 @@
         <img style="height: 55px;" src="assets/Css/ImagesCss/PageTitle1.png" alt="">
 
         <nav style="display: flex;" class="standartItemSecundario">
-            <button id="caralho" class="fodase" style="display: flex; text-align: center; height: 50px;">
-                <div id="meuMenu" class="menu-escondido">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dicta voluptatibus animi
-                        neque esse cumque quisquam nisi porro facere est commodi vero culpa officia itaque incidunt,
-                        libero ducimus quaerat qui.</p>
+            <div id="status">
+                <h5>Staus</h5>
+                <div>
+                    <h6>Delivery <p id="deliveryStatus">ON</p> </h6>
                 </div>
-                <div class="item">
-                    <h4>Status</h5>
-                        <h5>Delivery ON</h6>
-                            <h6>Delivery OFF</h6>
-                </div>
-                <i class="bi bi-gear-fill"></i>
-            </button>
+                <button><i class="bi bi-toggle-off"></i></button>
+            </div>
             <button style="display: flex; flex-direction: column; height: 40px;">
                 <h3>Garçom Digital</h3>
                 <i class="bi bi-toggle-on"></i>

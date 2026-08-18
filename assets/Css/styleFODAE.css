@@ -3,8 +3,6 @@ body {
     left: 0;
     margin: 0;
     position: relative;
-    width: 80vh;
-    height: 110vh;
     overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -28,17 +26,61 @@ body {
 .standart {
     display: flex;
     position: absolute;
+    justify-content: space-between;
     background-color: red;
-    width: 1451px;
+    width: 100%;
     height: 60px;
     top: 0;
     left: 70px;
 }
 
 .standartItemPrincipal {
-    margin-left: 15px;
+    margin-left: 90px;
+    gap: 20px;
 }
-
+.btnPrincipal{
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.btnPrincipal i{
+    margin-top: 3px;
+}
+.standartItemSecundario{
+    margin-right: 125px;
+}
+#status{
+    background-color: gray;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    grid-template-rows: 60px;
+}
+#status h5{
+    margin-left: 30px;
+}
+#status div{
+    display: flex;
+    
+}
+#status div h6{
+    gap: 5px;
+    display: inline-flex;
+}
+#status div h6 p{
+    margin: 0;
+}
+#status button{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+#status button .bi-toggle-off{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+}
 .item {
     display: flex;
     flex-direction: column;
