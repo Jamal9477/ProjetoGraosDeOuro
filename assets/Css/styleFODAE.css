@@ -38,6 +38,12 @@ body {
     margin-left: 90px;
     gap: 20px;
 }
+#btnWpp{
+    background-color: rgb(0, 214, 0);
+}
+#btnWpp i{
+    color: greenyellow;
+}
 .btnPrincipal{
     border-radius: 7px;
     border: 1px solid black;
