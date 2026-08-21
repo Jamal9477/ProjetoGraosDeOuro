@@ -576,8 +576,8 @@ h4 {
     margin-top: 25px;
     margin-right: 20px;
     border-radius: 10px;
-    width: 160px;
-    height: 190px;
+    width: 170px;
+    height: 200px;
     display: flex;
     flex-direction: colum;
     justify-content: center;
@@ -595,7 +595,7 @@ h4 {
 .rapaz {
     position: absolute;
     top: 470px;
-    left: 35px;
+    left: 25px;
     height: 200px;
     width: 1380px;
     justify-content: space-evenly;
