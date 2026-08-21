@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="assets/Css/styleFODAE.css">
     <title>FODASE-Grãos de Ouro-FODASE</title>
 </head>
-<style>
+<style> /*caracteristica input*/
+    input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
 </style>
-<style></style>
-<style></style>
 
 <body>
     <section class="menuLateral">
@@ -126,7 +129,7 @@
                 </span>
                 <span class="img5">
                     <span class="imgdefrase"></span>
-                    <h2 class="nome">carambola</h2>
+                    <h2 class="nome">OPAAAAA</h2>
                 </span>
                 <span class="img6">
                     <span class="imgdecomida"></span>
@@ -229,9 +232,16 @@
                         </div>
                     </div>
                     <div class="crcItem2">
-                        <span><i class="bi bi-chat-dots"></i></span>
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                        <div class="addAmout">
+                            <button class="remove"><i class="bi bi-dash"></i></button>
+                            <input type="number" placeholder="0">
+                            <button class="add"><i class="bi bi-plus"></i></button>
+                        </div>
                         <span><i class="bi bi-trash"></i></span>
-                        <span id="valorTotal">R$ <h6 id="takeTotalAmount"></h6></span>
+                        </div>
+                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">dasd</h6></span>
                     </div>
                 </div>
             </div>

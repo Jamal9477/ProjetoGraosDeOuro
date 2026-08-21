@@ -1,3 +1,8 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
 body {
     top: 0;
     left: 0;
@@ -682,6 +687,7 @@ h4 {
 .crcItem1 h6 {
     margin: 0;
     font-size: 17px;
+    margin-left: 15px;
 }
 
 .displayAmount {
@@ -708,5 +714,79 @@ h4 {
 .crcItem2 {
     position: relative;
     background-color: brown;
+    display: grid;
     width: 45%;
+}
+.bi-chat-dots{
+    color: rgba(128, 128, 128, 0.842);
+}
+.bi-trash{
+    color: red;
+}
+.bi-chat-dots, .bi-trash{
+    font-size: 20px;
+}
+
+.addAmout{  /*botoes de quantia*/
+    position: relative;
+    display: flex;
+    background-color: snow;
+    width: 80px;
+    height: 22px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+.addAmout input{
+    position: absolute;
+    left: 26px;
+    top: 2px;
+    height: min-content;
+    background-color: wheat;
+    height: 16px;
+    width: 24px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+}
+.add{ /*adicionar_Quantia*/
+    position: absolute;
+    left: 56px;
+    border-radius: 0px 10px 10px 0px;
+    width: 24px;
+    height: 22px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: red;
+    transition: 0.1s;
+}
+.remove{ /*remover_quantia*/
+    position: absolute;
+    left: 0;
+    border-radius: 10px 0px 0px 10px;
+    width: 24px;
+    height: 22px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: red;
+    transition: 0.1s;
+}
+.remove i, .add i{ /*centralizacao*/
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+.add:hover, .remove:hover{ /*anmt_fundoAdd*/
+    background-color: #763f22;
+    color: black;
+    transition: 0.1s;
+}
+#valorTotal{
+display: flex;
+justify-self: right;
+margin-right: 15px;
+gap: 8px;
+}
+#valorTotal p, h6{
+    color: black;
+    font-size: 16px;
 }
