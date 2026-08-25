@@ -735,6 +735,8 @@ h4 {
     background-color: gray;
     border-radius: 15px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     margin: 3px;
     width: 84%;
     height: 60%;
@@ -742,7 +744,6 @@ h4 {
 
 .itemMenuCompra {
     background-color: white;
-    position: absolute;
     width: 100%;
     display: flex;
     gap: 10%;
