@@ -70,7 +70,6 @@ body {
 }
 
 #btnWpp {
-<<<<<<< HEAD
   --color: #0bad2e;
   font-family: inherit;
   display: flex;
@@ -89,25 +88,6 @@ body {
   font-weight: 500;
   color: var(--color);
   top: -10px;
-=======
-    --color: #0bad2e;
-    font-family: inherit;
-    display: flex;
-    flex-direction: column;
-    width: 8em;
-    height: 2.6em;
-    margin: 20px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
->>>>>>> 9670b0b8bbfc32c259dd9c36ddc7549b479bf81f
 }
 
 #btnWpp:before {
