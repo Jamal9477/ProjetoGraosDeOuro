@@ -70,53 +70,53 @@ body {
 }
 
 #btnWpp {
-  --color: #0bad2e;
-  font-family: inherit;
-  display: flex;
-  flex-direction: column;
-  width: 8em;
-  height: 2.6em;
-  margin: 20px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--color);
+    --color: #0bad2e;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    height: 2.6em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
 }
 
 #btnWpp:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: var(--color);
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 #btnWpp:hover {
-  color: #fff;
+    color: #fff;
 }
 
 #btnWpp:before {
-  top: 100%;
-  left: 100%;
-  transition: all 0.7s;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
 }
 
 #btnWpp:hover:before {
-  top: -30px;
-  left: -30px;
+    top: -30px;
+    left: -30px;
 }
 
 #btnWpp:active:before {
-  background: #000000;
-  transition: background 0s;
+    background: #000000;
+    transition: background 0s;
 }
 
 #btnWpp i {
@@ -731,19 +731,29 @@ h4 {
     margin-left: 10px;
 }
 
+
+
 #menuCompraItens {
     background-color: gray;
     border-radius: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    gap: 5px;
     margin: 3px;
     width: 84%;
     height: 60%;
+    animation: scroll 5s linear infinite;
 }
 
 .itemMenuCompra {
     background-color: white;
+    border: 1px solid black;
+    line-height: 25px;
+    z-index: 1;
     width: 100%;
     display: flex;
     gap: 10%;
@@ -753,6 +763,7 @@ h4 {
     position: relative;
     background-color: rgba(0, 0, 255, 0);
     display: grid;
+    top: 1px;
     width: 45%;
 }
 
@@ -763,9 +774,11 @@ h4 {
 }
 
 .displayAmount {
+    position: relative;
+    left: 15px;
     display: flex;
     background-color: white;
-    width: 15px;
+    width: 30px;
     height: 15px;
 }
 
@@ -785,29 +798,32 @@ h4 {
 
 .crcItem2 {
     position: relative;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     display: grid;
     width: 45%;
 }
 
-.bi-chat-dots {
+.crcItem2 div span .bi-chat-dots {
+    position: relative;
+    top: 4px;
     color: rgba(128, 128, 128, 0.842);
+    font-size: 20px;
 }
 
-.bi-trash {
+.crcItem2 span .bi-trash {
+    position: relative;
+    top: 4px;
     color: red;
-}
-
-.bi-chat-dots,
-.bi-trash {
     font-size: 20px;
 }
 
 .addAmout {
     /*botoes de quantia*/
     position: relative;
+    top: 4px;
     display: flex;
     background-color: snow;
+    border: 1px solid black;
     width: 80px;
     height: 22px;
     border-radius: 10px 10px 10px 10px;
