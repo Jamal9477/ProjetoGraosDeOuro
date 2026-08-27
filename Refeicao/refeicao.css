@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+body{
+    overflow: hidden;
+    position: relative;
+    height: 110vh;
+    z-index: -2;
+}
+.cabeca{
+    position: relative;
+    left: 120px;
+    width: auto;
+    background-color: blue;
+    height: 80px;
+    z-index: 2;
+}
+
+.menuLateral{
+    background-color: rgb(255, 0, 200);
+    height: 100%;
+    width: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+.menuCardapio{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 50px;
+    height: 850px;
+    width: 100%;
+    z-index: 2;
+}
+
+.cardapio{
+    background-color: blueviolet;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+}
