@@ -70,24 +70,24 @@ body {
 }
 
 #btnWpp {
-  --color: #0bad2e;
-  font-family: inherit;
-  display: flex;
-  flex-direction: column;
-  width: 8em;
-  height: 2.6em;
-  margin: 20px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--color);
-  top: -10px;
+    --color: #0bad2e;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    height: 2.6em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    top: -10px;
 }
 
 #btnWpp:before {
@@ -134,7 +134,7 @@ body {
     margin-top: 3px;
 }
 
-.graosdeOuro{
+.graosdeOuro {
     margin-top: 13px;
     font-size: 30px;
     font-style: italic;
@@ -155,7 +155,7 @@ body {
     position: relative;
 }
 
-.bi-gear-fill{
+.bi-gear-fill {
     position: absolute;
     left: 80px;
     top: 13px;
@@ -759,7 +759,7 @@ h4 {
     gap: 5px;
     margin: 3px;
     width: 84%;
-    height: 60%;
+    height: 50%;
     animation: scroll 5s linear infinite;
 }
 
@@ -911,4 +911,67 @@ h6 {
     color: black;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.479);
+}
+
+#confirmTotalItems {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+#confirmTotalItems:checked~.confirmSubtotalItems .confirmationAcept {
+    opacity: 1;
+    z-index: 1;
+}
+#confirmTotalItems:checked~.confirmSubtotalItems .confirmationRecused{
+    opacity: 0;
+    z-index: -2;
+}
+.confirmSubtotalItems{
+    position: absolute;
+    left: 15px;
+    width: 200px;
+}
+.confirmationAcept {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+.confirmationRecused {
+    position: absolute;
+}
+
+.tableSubtotal {
+    height: 55%;
+    background-color: gray;
+}
+
+.tableConfirmItems {
+    height: 55px;
+    background-color: burlywood;
+}
+
+.endTableItems {
+    height: 67px;
+    background-color: red;
+}
+
+.tableshowSubtotal {
+    display: flex;
+}
+
+.tableAmountTotal p,
+span {
+    margin: 0;
+    display: flex;
+}
+
+.tableOFConfirmItems {
+    position: relative;
+}
+
+.mesaTotalFooter {
+    display: flex;
+    flex-direction: column;
 }

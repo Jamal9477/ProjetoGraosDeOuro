@@ -6,59 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/Css/styleFODAE.css">
-    
+
     <title>FODASE-Grãos de Ouro-FODASE</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<style> 
-/*caracteristica input*/
-    input[type=number]::-webkit-inner-spin-button, 
-        input[type=number]::-webkit-outer-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
-        }
-        #menuCompraItens::-webkit-scrollbar,
-        #menuCompraItens::-webkit-scrollbar-track{
-            margin: 0;
-            -webkit-appearance: none;
-            background-color: transparent;
-        }
-        
+<style>
+    /*caracteristica input*/
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #menuCompraItens::-webkit-scrollbar,
+    #menuCompraItens::-webkit-scrollbar-track {
+        margin: 0;
+        -webkit-appearance: none;
+        background-color: transparent;
+    }
 </style>
 
 <body>
 
 
-    
+
 
 
     <section class="menuLateral">
         <nav class="menuLateralItensPrimarios">
-            <button style="width: 100%; height: 50px; background-color: white; border: none; color: red;"><i style="font-size: 30px;" class="bi bi-list"></i></button>
-            <button style="background-color: white; border: none; margin: 0; text-align: center; height: 60px; width: 100%;"><img
+            <button style="width: 100%; height: 50px; background-color: white; border: none; color: red;"><i
+                    style="font-size: 30px;" class="bi bi-list"></i></button>
+            <button
+                style="background-color: white; border: none; margin: 0; text-align: center; height: 60px; width: 100%;"><img
                     style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png" alt=""></button>
         </nav>
         <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
         <nav class="menuLateralItensSecundarios">
-            <button><i
-                    style="font-size: 15px;" class="bi bi-search"></i></button>
-            <button><i
-                    style="font-size: 15px;" class="bi bi-fork-knife"></i>
+            <button><i style="font-size: 15px;" class="bi bi-search"></i></button>
+            <button><i style="font-size: 15px;" class="bi bi-fork-knife"></i>
                 <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Refeições</p>
             </button>
-            <button><i
-                    style="font-size: 15px;" class="bi bi-car-front-fill"></i>
+            <button><i style="font-size: 15px;" class="bi bi-car-front-fill"></i>
                 <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Delivery</p>
             </button>
-            <button><i
-                    style="font-size: 15px;" class="bi bi-person-vcard"></i>
+            <button><i style="font-size: 15px;" class="bi bi-person-vcard"></i>
                 <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Cadastro</p>
             </button>
-            <button><i
-                    style="font-size: 15px;" class="bi bi-columns-gap"></i>
+            <button><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
                 <p style="font-size: 11px; margin: 0; font-style: oblique; margin-left: 0;">Ver mais</p>
             </button>
         </nav>
@@ -90,7 +84,8 @@
                 <p style="margin: 0; font-size: 11px;">Envie uma mensagem</p>
             </button>
         </nav>
-        <h3 class="animate__animated animate__jackInTheBox" style="margin-top: 15px; font-size: 30px; font-style: italic;">Cafeteria Grãos de Ouro</h3>
+        <h3 class="animate__animated animate__jackInTheBox"
+            style="margin-top: 15px; font-size: 30px; font-style: italic;">Cafeteria Grãos de Ouro</h3>
 
         <img style="height: 55px;" src="assets/Css/ImagesCss/PageTitle1.png" alt="">
 
@@ -247,14 +242,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -272,14 +270,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -297,14 +298,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -322,14 +326,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -347,14 +354,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -372,14 +382,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -397,14 +410,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -422,14 +438,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -447,14 +466,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -472,14 +494,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -497,14 +522,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -522,14 +550,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -547,14 +578,17 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
                 <div class="itemMenuCompra">
@@ -572,22 +606,47 @@
                     <div class="crcItem2">
                         <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
                             <span><i class="bi bi-chat-dots"></i></span>
-                        <div class="addAmout">
-                            <button class="remove"><i class="bi bi-dash"></i></button>
-                            <input type="number" placeholder="0">
-                            <button class="add"><i class="bi bi-plus"></i></button>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
                         </div>
-                        <span><i class="bi bi-trash"></i></span>
-                        </div>
-                        <span id="valorTotal"><p>R$</p> <h6 id="takeTotalAmount">00,00</h6></span>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="linha"></div>
-            <footer>
-                <div>
-                    <h6>Subtotal</h6>
-                    <div><p>R$</p><span  id="required"></span></div>
+            <footer class="mesaTotalFooter">
+                <div class="tableSubtotal">
+                    <div class="tableshowSubtotal">
+                        <h5>Subtotal</h5>
+                        <div class="tableAmountTotal">
+                            <p>R$</p><span id="showAmountTotal">
+                                <h6 id="takeSubtotal">00,00</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="">Descartar todos os itens do pedido</a>
+                </div>
+                <div class="linha"></div>
+                <div class="tableConfirmItems">
+                    <h5>Confirmação de itens</h5>
+                    <div class="tableOFConfirmItems">
+                        <input type="checkbox" name="confirmItems" id="confirmTotalItems">
+                        <label for="confirmTotalItems" class="confirmSubtotalItems">
+                            <h6 class="confirmationAcept">É exatamente o que pedi</h6>
+                            <h6 class="confirmationRecused">Não foi o que pedi</h6>
+                        </label>
+                    </div>
+                </div>
+                <div class="endTableItems">
+                    <button>Fechar conta</button>
+                    <button>Adicionar pagamento</button>
                 </div>
             </footer>
         </section>
