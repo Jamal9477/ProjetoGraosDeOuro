@@ -49,8 +49,7 @@ body {
     border: 2px solid var(--color);
     color: var(--color);
     font-family: inherit;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     transition: color 0.5s;
     font-size: 17px;
     border-radius: 9px;
@@ -59,7 +58,16 @@ body {
     cursor: pointer;
     z-index: 1;
 }
-
+.btnMenu i{
+    position: absolute;
+}
+.btnMenu p{
+    font-size: 13.4px;
+    top: 50%;
+    left: 7px;
+    position: absolute;
+    
+}
 .btnMenu:before {
     content: "";
     position: absolute;
@@ -112,20 +120,13 @@ body {
 }
 
 .menuLateralItensSecundarios button {
-    position: relative;
-    background-color: white;
-    color: red;
-    border: none;
-    flex-direction: column;
-    margin: 0;
-    text-align: center;
-    height: 50px;
-    width: 70px;
+
 }
 
 .menuLateralItensSecundarios button p {
-    color: black;
+
 }
+
 
 .standart {
     display: flex;
