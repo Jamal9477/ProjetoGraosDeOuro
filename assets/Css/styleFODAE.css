@@ -41,7 +41,68 @@ body {
     color: black;
     background-color: transparent;
 }
+.btnMenu {
+    position: relative;
+    height: 2.6em;
+    width: 8em;
+    --color: #5d91d4;
+    border: 2px solid var(--color);
+    color: var(--color);
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: color 0.5s;
+    font-size: 17px;
+    border-radius: 9px;
+    font-weight: 500;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
 
+.btnMenu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.btnMenu:hover {
+    color: #fff;
+}
+
+.btnMenu:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.btnMenu:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btnMenu:active:before {
+    background: #000000;
+    transition: background 0s;
+}
+
+.btnMenu i {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: black;
+    transition: 0.2s;
+}
+.btnMenu:hover i{
+    color: rgb(0, 82, 107);
+    border-radius: 2.5px;
+    box-shadow: 10px 9px 15px;
+    transition: 0.2s;
+}
 .menuLateralItensSecundarios {
     display: flex;
     flex-direction: column;
