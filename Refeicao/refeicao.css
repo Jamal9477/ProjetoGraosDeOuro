@@ -6,7 +6,7 @@
 body{
     overflow: hidden;
     position: relative;
-    height: 110vh;
+    height: 130vh;
     z-index: -2;
 }
 .cabeca{
@@ -24,27 +24,49 @@ body{
     width: 120px;
     position: relative;
     z-index: 2;
+    display: flex;
 }
 
 .menuCardapio{
     background-color: rgb(255, 0, 0);
     position: relative;
-    top: 50px;
-    height: 850px;
+    left: 91px;
+    height: 880px;
     width: 100%;
-    z-index: 2;
+    top: -1265px;
+    z-index: -2;
 }
 
 .cardapio{
     background-color: blueviolet;
     position: relative;
-    top: 200px;
-    left: 200px;
+    top: 140px;
+    left: 140px;
+    width: 1600px;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card{
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
+    width: 150px;
+    height: 120px;
+    top: 40px;
+    position: relative;
+    justify-content: center;
+}
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
+.input{
+    position: relative;
+    left: 830px;
+    top: -1170px;
+    height: 30px;
+    width: 400px;
 }
