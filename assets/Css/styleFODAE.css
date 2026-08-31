@@ -44,7 +44,7 @@ body {
 .btnMenu {
     position: relative;
     height: 2.6em;
-    width: 8em;
+    width: auto;
     --color: #5d91d4;
     border: 2px solid var(--color);
     color: var(--color);
@@ -57,6 +57,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
+    transition: 0.3s;
 }
 .btnMenu i{
     position: absolute;
@@ -64,8 +65,9 @@ body {
 .btnMenu p{
     font-size: 13.4px;
     top: 50%;
-    left: 7px;
+    left: 8px;
     position: absolute;
+    transition: 0.3s;
     
 }
 .btnMenu:before {
@@ -76,10 +78,30 @@ body {
     height: 150px;
     width: 200px;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 .btnMenu:hover {
-    color: #fff;
+   
+    transition: 0.3s;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0.15rem 0.15rem 10px;
+    --color: transparent;
+    background-color: transparent;
+    background: transparent;
+    
+}
+@keyframes pulsar{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
 }
 
 .btnMenu:before {
@@ -94,7 +116,7 @@ body {
 }
 
 .btnMenu:active:before {
-    background: #000000;
+    background: #00a594;
     transition: background 0s;
 }
 
@@ -108,26 +130,56 @@ body {
 .btnMenu:hover i{
     color: rgb(0, 82, 107);
     border-radius: 2.5px;
-    box-shadow: 10px 9px 15px;
     transition: 0.2s;
 }
 .menuLateralItensSecundarios {
+    top: 14px;
+    gap: 3px;
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    margin-top: 20px;
-    text-align: center;
+    width: 70px;
+    position: relative;
 }
 
 .menuLateralItensSecundarios button {
-
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
 }
-
+.menuLateralItensSecundarios button i{
+    left: 37%;
+    position: absolute;
+    color: black;
+}
 .menuLateralItensSecundarios button p {
-
+    text-shadow: 1px 0px 0px;
+    color: rgb(14, 41, 44);
+    position: absolute;
+    top: 29px;
+    left:15%;
 }
-
-
+.menuLateralItensTerciarios{
+    position: relative;
+    width: 70px;
+    background-color: red;
+}
+.menuLateralItensTerciarios button{
+    position: relative;
+    width: 70px;
+    height: 50px;
+}
+.menuLateralItensTerciarios button i{
+    left: 34%;
+    position: absolute;
+}
+.menuLateralItensTerciarios button p{
+    position: absolute;
+    top: 28px;
+    left:16%;
+}
 .standart {
     display: flex;
     position: absolute;
