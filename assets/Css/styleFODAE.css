@@ -197,6 +197,17 @@ body {
     gap: 20px;
 }
 
+#btnQR{
+    width: 130px;
+    top: 10px;
+    position: relative;
+}
+
+.bi-qr-code{
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
 #btnWpp {
     --color: #0bad2e;
     font-family: inherit;
@@ -272,22 +283,29 @@ body {
     margin-right: 125px;
 }
 
+#btnStatus{
+    width: 100px;
+    position: relative;
+    top: 5px;
+    left: -20px;
+}
+
+#btnDeliveryON{
+    position: relative;
+    left: -140px;
+    top: -40px;
+
+}
+
 #status {
     background-color: rgb(131, 130, 130);
     width: 120px;
     display: grid;
-    grid-template-columns: 160px 20px 20px;
+    grid-template-columns: 140px 4px 20px;
     grid-template-rows: 60px;
     margin-right: 150px;
-    border-radius: 10px;
+    border-radius: 0px;
     position: relative;
-}
-
-.bi-gear-fill {
-    position: absolute;
-    left: 80px;
-    top: 13px;
-    font-size: 30px;
 }
 
 #status h5 {
@@ -311,15 +329,13 @@ body {
 }
 
 #status button {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     position: relative;
-    margin-left: 7px;
-    margin-top: 25px;
 }
 
 #status button .bi-toggle-off {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     font-size: 22px;
