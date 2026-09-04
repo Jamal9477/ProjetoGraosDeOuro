@@ -11,9 +11,9 @@ body {
     height: 110vh;
     background-repeat: no-repeat;
     position: relative;
-  width: 100%;
- 
-  
+    width: 100%;
+
+
     background: linear-gradient(to bottom right, blue, white);
 }
 
@@ -43,6 +43,7 @@ body {
     color: black;
     background-color: transparent;
 }
+
 .btnMenu {
     position: relative;
     height: 2.6em;
@@ -61,17 +62,20 @@ body {
     z-index: 1;
     transition: 0.3s;
 }
-.btnMenu i{
+
+.btnMenu i {
     position: absolute;
 }
-.btnMenu p{
+
+.btnMenu p {
     font-size: 13.4px;
     top: 50%;
     left: 8px;
     position: absolute;
     transition: 0.3s;
-    
+
 }
+
 .btnMenu:before {
     content: "";
     position: absolute;
@@ -84,7 +88,7 @@ body {
 }
 
 .btnMenu:hover {
-   
+
     transition: 0.3s;
     color: #000000;
     border-radius: 10px;
@@ -92,16 +96,19 @@ body {
     --color: transparent;
     background-color: transparent;
     background: transparent;
-    
+
 }
-@keyframes pulsar{
-    0%{
+
+@keyframes pulsar {
+    0% {
         scale: 1;
     }
-    50%{
+
+    50% {
         scale: 1.1;
     }
-    100%{
+
+    100% {
         scale: 1;
     }
 }
@@ -129,11 +136,13 @@ body {
     color: black;
     transition: 0.2s;
 }
-.btnMenu:hover i{
+
+.btnMenu:hover i {
     color: rgb(0, 82, 107);
     border-radius: 2.5px;
     transition: 0.2s;
 }
+
 .menuLateralItensSecundarios {
     top: 55px;
     gap: 10px;
@@ -151,19 +160,22 @@ body {
     border-radius: 0px;
     background-color: transparent;
 }
-.menuLateralItensSecundarios button i{
+
+.menuLateralItensSecundarios button i {
     left: 37%;
     position: absolute;
     color: black;
 }
+
 .menuLateralItensSecundarios button p {
     text-shadow: 1px 0px 0px;
     color: rgb(14, 41, 44);
     position: absolute;
     top: 29px;
-    left:15%;
+    left: 15%;
 }
-.menuLateralItensTerciarios{
+
+.menuLateralItensTerciarios {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -172,6 +184,7 @@ body {
     width: 70px;
     background-color: transparent
 }
+
 .menuLateralItensTerciarios button {
     position: relative;
     width: 70px;
@@ -180,18 +193,21 @@ body {
     border-radius: 0px;
     background-color: transparent;
 }
-.menuLateralItensTerciarios button i{
+
+.menuLateralItensTerciarios button i {
     left: 37%;
     position: absolute;
     color: black;
 }
+
 .menuLateralItensTerciarios button p {
     text-shadow: 1px 0px 0px;
     color: rgb(14, 41, 44);
     position: absolute;
     top: 29px;
-    left:15%;
+    left: 15%;
 }
+
 .standart {
     display: flex;
     position: absolute;
@@ -209,13 +225,13 @@ body {
     gap: 20px;
 }
 
-#btnQR{
+#btnQR {
     width: 130px;
     top: 10px;
     position: relative;
 }
 
-.bi-qr-code{
+.bi-qr-code {
     margin-left: 35px;
     margin-top: -5px;
 }
@@ -295,14 +311,14 @@ body {
     margin-right: 125px;
 }
 
-#btnStatus{
+#btnStatus {
     width: 100px;
     position: relative;
     top: 5px;
     left: -20px;
 }
 
-#btnDeliveryON{
+#btnDeliveryON {
     position: relative;
     left: -140px;
     top: -40px;
@@ -794,9 +810,10 @@ h4 {
     transition: 0.5s;
 }
 
-.botaoCompra p{
+.botaoCompra p {
     color: white;
 }
+
 .botaoCompra:hover {
     scale: 1.010;
     transition: 0.5s;
