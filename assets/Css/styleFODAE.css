@@ -16,7 +16,32 @@ body {
 
     background: linear-gradient(to bottom right, blue, white);
 }
-
+.btn-toggle {
+    width: 60px;
+    height: 34px;
+    border-radius: 30px;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #343a40;
+    border: 2px solid #6c757d;
+    cursor: pointer;
+}
+/* A bolinha interna do botão */
+.btn-toggle::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
 .menuLateral {
     top: 5px;
     left: 5px;
