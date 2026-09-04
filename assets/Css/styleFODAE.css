@@ -8,6 +8,8 @@ body {
     top: 0;
     left: 0;
     margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
     overflow-y: hidden;
@@ -23,10 +25,9 @@ body {
     border: 1px solid rgb(180, 178, 178);
     height: 98.8vh;
     width: 70px;
-    gap: 10px;
     display: grid;
     grid-template-columns: 70px;
-    grid-template-rows: 100px 1px;
+    grid-template-rows: 100px 1px 325px 35px 100px;
     position: relative;
 }
 
@@ -133,8 +134,8 @@ body {
     transition: 0.2s;
 }
 .menuLateralItensSecundarios {
-    top: 14px;
-    gap: 3px;
+    top: 55px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     width: 70px;
@@ -163,22 +164,32 @@ body {
 }
 .menuLateralItensTerciarios{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 125px;
     width: 70px;
-    background-color: red;
+    background-color: transparent
 }
-.menuLateralItensTerciarios button{
+.menuLateralItensTerciarios button {
     position: relative;
     width: 70px;
     height: 50px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
 }
 .menuLateralItensTerciarios button i{
-    left: 34%;
+    left: 37%;
     position: absolute;
+    color: black;
 }
-.menuLateralItensTerciarios button p{
+.menuLateralItensTerciarios button p {
+    text-shadow: 1px 0px 0px;
+    color: rgb(14, 41, 44);
     position: absolute;
-    top: 28px;
-    left:16%;
+    top: 29px;
+    left:15%;
 }
 .standart {
     display: flex;
@@ -411,7 +422,7 @@ h4 {
 }
 
 .itemsPricinpais {
-    background-color: blue;
+    background-color: transparent;
     position: absolute;
     display: grid;
     top: 60px;
