@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle de Tema Local</title>
-    
-    <!-- Bootstrap CSS Local -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Bootstrap Icons Local -->
-    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 
-    <style>
-        /* Estilos customizados para a transição suave */
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        /* Estilo do botão toggle redondo */
-        .btn-toggle {
-            width: 60px;
-            height: 34px;
-            border-radius: 30px;
-            position: relative;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #343a40;
-            border: 2px solid #6c757d;
-            cursor: pointer;
-        }
-        /* A bolinha interna do botão */
-        .btn-toggle::before {
-            content: '';
-            position: absolute;
-            width: 26px;
-            height: 26px;
-            border-radius: 50px;
-            background-color: white;
-            top: 2px;
-            left: 2px;
-            transition: transform 0.3s ease;
-            z-index: 2;
-        }
-        /* Quando o tema escuro estiver ativo, move a bolinha para a direita */
-        [data-bs-theme="dark"] .btn-toggle::before {
-            transform: translateX(26px);
-        }
-        /* Ícones dentro do botão */
-        .toggle-icon {
-            font-size: 0.9rem;
-            z-index: 1;
-            padding: 0 6px;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle de Tema Local</title>
+
+  <!-- Bootstrap CSS Local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap Icons Local -->
+  <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+  <style>
+    /* Estilos customizados para a transição suave */
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Estilo do botão toggle redondo */
+    .btn-toggle {
+      width: 60px;
+      height: 34px;
+      border-radius: 30px;
+      position: relative;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #343a40;
+      border: 2px solid #6c757d;
+      cursor: pointer;
+    }
+
+    /* A bolinha interna do botão */
+    .btn-toggle::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-radius: 50px;
+      background-color: white;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s ease;
+      z-index: 2;
+    }
+    
+    /* Quando o tema escuro estiver ativo, move a bolinha para a direita */
+    [data-bs-theme="dark"] .btn-toggle::before {
+      transform: translateX(26px);
+    }
+
+  </style>
 </head>
+
 <body class="d-flex flex-column min-vh-100 justify-content-center align-items-center" data-bs-theme="light">
 
-    <div class="text-center shadow p-5 rounded bg-body-tertiary">
-        <h1 class="mb-4">Alternar Tema</h1>
-        
-        <!-- Botão Toggle -->
-        <button class="btn btn-toggle " id="themeToggle" aria-label="Alternar tema">
-            <i class="bi bi-sun-fill"></i>
-           
-        </button>
+  <div class="text-center shadow p-5 rounded bg-body-tertiary">
+    <h1 class="mb-4">Alternar Tema</h1>
 
-        <p class="text-muted">Este switch altera dinamicamente entre os modos Claro e Escuro utilizando classes locais.</p>
-    </div>
+    <!-- Botão Toggle -->
+    <button class="btn btn-toggle" id="themeToggle" aria-label="Alternar tema">
+    </button>
 
-    <!-- Bootstrap JS Local -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Script do Toggle -->
-    <script>
-        const button = document.getElementById('themeToggle');
-        const body = document.body;
+  </div>
 
-        button.addEventListener('click', () => {
-            // Verifica o tema atual no atributo nativo do Bootstrap 5
-            const currentTheme = body.getAttribute('data-bs-theme');
-            
-            if (currentTheme === 'light') {
-                body.setAttribute('data-bs-theme', 'dark');
-            } else {
-                body.setAttribute('data-bs-theme', 'light');
-            }
-        });
-    </script>
+  <!-- Bootstrap JS Local -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script do Toggle -->
+  <script>
+    const button = document.getElementById('themeToggle');
+    const body = document.body;
+
+    button.addEventListener('click', () => {
+      // Verifica o tema atual no atributo nativo do Bootstrap 5
+      const currentTheme = body.getAttribute('data-bs-theme');
+
+      if (currentTheme === 'light') {
+        body.setAttribute('data-bs-theme', 'dark');
+      } else {
+        body.setAttribute('data-bs-theme', 'light');
+      }
+    });
+  </script>
 </body>
+
 </html>

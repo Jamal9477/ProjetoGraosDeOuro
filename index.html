@@ -646,6 +646,22 @@
 
     </main>
 
+    <script>
+        const button = document.getElementById('themeToggle');
+        const body = document.body;
+    
+        button.addEventListener('click', () => {
+          // Verifica o tema atual no atributo nativo do Bootstrap 5
+          const currentTheme = body.getAttribute('data-bs-theme');
+    
+          if (currentTheme === 'light') {
+            body.setAttribute('data-bs-theme', 'dark');
+          } else {
+            body.setAttribute('data-bs-theme', 'light');
+          }
+        });
+      </script>
+
 </body>
 
 </html>
