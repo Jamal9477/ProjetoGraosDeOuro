@@ -11,12 +11,11 @@ body {
     height: 110vh;
     background-repeat: no-repeat;
     position: relative;
-  width: 100%;
- 
-  
+    width: 100%;
+
+
     background: linear-gradient(to bottom right, blue, white);
 }
-
 .menuLateral {
     top: 5px;
     left: 5px;
@@ -184,6 +183,7 @@ body {
     width: 70px;
     background-color: transparent
 }
+
 .menuLateralItensTerciarios button {
     position: relative;
     width: 70px;
@@ -192,17 +192,19 @@ body {
     border-radius: 0px;
     background-color: transparent;
 }
-.menuLateralItensTerciarios button i{
+
+.menuLateralItensTerciarios button i {
     left: 37%;
     position: absolute;
     color: black;
 }
+
 .menuLateralItensTerciarios button p {
     text-shadow: 1px 0px 0px;
     color: rgb(14, 41, 44);
     position: absolute;
     top: 29px;
-    left:15%;
+    left: 15%;
 }
 
 .standart {
@@ -808,9 +810,10 @@ h4 {
     transition: 0.5s;
 }
 
-.botaoCompra p{
+.botaoCompra p {
     color: white;
 }
+
 .botaoCompra:hover {
     scale: 1.010;
     transition: 0.5s;
@@ -863,7 +866,6 @@ h4 {
 .menuCompra {
     background-color: white;
     width: 25%;
-    position: ;
     opacity: 1;
     z-index: -1;
     justify-self: right;

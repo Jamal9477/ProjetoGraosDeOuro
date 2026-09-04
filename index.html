@@ -30,10 +30,6 @@
 <body>
 
 
-
-
-
-
     <section class="menuLateral">
         <nav class="menuLateralItensPrimarios">
             <button class="btnMenu"><i style="font-size: 30px;" class="bi bi-list"></i></button>
@@ -56,7 +52,7 @@
         <div style="background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
         <nav style="" class="menuLateralItensTerciarios">
             <button class="btnMenu"><i style="font-size: 20px;" class="bi bi-question-circle"></i>
-                <p >Suporte</p>
+                <p>Suporte</p>
             </button>
             <button class="btnMenu"><i style="font-size: 20px;" class="bi bi-box-arrow-right"></i>
                 <p>Deslogar</p>
@@ -209,7 +205,9 @@
         </div>
 
         <div class="botaodeCompra">
-            <button class="botaoCompra"><p>Fazer pedido</p></button>
+            <button class="botaoCompra">
+                <p>Fazer pedido</p>
+            </button>
         </div>
 
         <section class="menuCompra">
@@ -647,6 +645,22 @@
 
 
     </main>
+
+    <script>
+        const button = document.getElementById('themeToggle');
+        const body = document.body;
+    
+        button.addEventListener('click', () => {
+          // Verifica o tema atual no atributo nativo do Bootstrap 5
+          const currentTheme = body.getAttribute('data-bs-theme');
+    
+          if (currentTheme === 'light') {
+            body.setAttribute('data-bs-theme', 'dark');
+          } else {
+            body.setAttribute('data-bs-theme', 'light');
+          }
+        });
+      </script>
 
 </body>
 
