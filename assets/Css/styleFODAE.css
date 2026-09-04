@@ -11,9 +11,9 @@ body {
     height: 110vh;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  width: 100%;
+ 
+  
     background: linear-gradient(to bottom right, blue, white);
 }
 
@@ -23,6 +23,7 @@ body {
     border-radius: 10px;
     background-color: rgb(70, 89, 141);
     border: 1px solid rgb(180, 178, 178);
+    z-index: 0;
     height: 98.8vh;
     width: 70px;
     display: grid;
@@ -448,12 +449,11 @@ h4 {
 
 .menudeEscolha {
     display: flex;
-    scrollbar-width: 1200px;
-    position: absolute;
+    position: relative;
     background-color: yellow;
     border-radius: 10px;
     height: 820px;
-    width: 1420px;
+    width: 75%;
     left: 15px;
     top: 100px;
 }
@@ -466,7 +466,7 @@ h4 {
     background-color: pink;
     position: absolute;
     height: 80px;
-    width: 1420px;
+    width: 100%;
     border-radius: 10px;
     left: 15px;
     top: 10px;
@@ -615,7 +615,7 @@ h4 {
     background-color: rgb(255, 224, 224);
     position: absolute;
     height: 200px;
-    width: 1395px;
+    width: 100%;
     left: 15px;
     top: 10px;
     border-radius: 20PX;
@@ -785,11 +785,9 @@ h4 {
     font-size: 70px;
 }
 
-
-
 .botaodeCompra {
-    position: absolute;
-    background-color: aqua;
+    position: relative;
+    background-color: transparent;
     height: 60px;
     width: 1398px;
     top: 820px;
@@ -798,24 +796,25 @@ h4 {
 }
 
 
-.botao {
+.botaoCompra {
     position: absolute;
     top: 10px;
     left: 20px;
     height: 40px;
     width: 1360px;
     border-radius: 10px;
-    color: white;
     background-color: red;
     border: none;
     transition: 0.5s;
 }
 
-
-.botao:hover {
+.botaoCompra p{
+    color: white;
+}
+.botaoCompra:hover {
     scale: 1.010;
-    background-color: rgb(146, 19, 19);
     transition: 0.5s;
+    box-shadow: 6px 8px 18px 0px;
 }
 
 .menuComidas {
@@ -864,7 +863,9 @@ h4 {
 .menuCompra {
     background-color: white;
     width: 25%;
-    position: relative;
+    position: ;
+    opacity: 1;
+    z-index: -1;
     justify-self: right;
     display: flex;
     flex-direction: column;
