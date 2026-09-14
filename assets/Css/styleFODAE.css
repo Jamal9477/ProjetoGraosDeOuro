@@ -12,26 +12,28 @@ body {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-
-
+    overflow: hidden;
     background: linear-gradient(to bottom right, blue, white);
 }
 
 .menuLateral {
     top: 5px;
-    left: 5px;
+    left: -230px;
     border-radius: 10px;
     background-color: rgb(70, 89, 141);
     border: 1px solid rgb(180, 178, 178);
     z-index: 0;
+    z-index: 2;
     height: 98.8vh;
-    width: 70px;
+    width: 300px;
+    justify-content: right;
     display: grid;
     grid-template-columns: 70px;
     grid-template-rows: 100px 1px 325px 35px 100px;
     position: relative;
 }
-
+.btnMenuzin:active {
+}
 .menuLateralItensPrimarios {
     position: relative;
 }
@@ -97,20 +99,6 @@ body {
     background-color: transparent;
     background: transparent;
 
-}
-
-@keyframes pulsar {
-    0% {
-        scale: 1;
-    }
-
-    50% {
-        scale: 1.1;
-    }
-
-    100% {
-        scale: 1;
-    }
 }
 
 .btnMenu:before {
@@ -213,11 +201,11 @@ body {
     position: absolute;
     justify-content: space-between;
     background-color: rgb(70, 89, 141);
-    width: 100%;
+    width: 1799px;
     height: 53px;
     border-radius: 10px;
     top: 5px;
-    left: 82px;
+    left: 97px;
     border: 1px solid rgb(180, 178, 178);
 }
 
@@ -276,6 +264,9 @@ body {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
+}
+#btnWpp:active{
+    border: 1px solid black;
 }
 
 #btnWpp:hover:before {
@@ -452,13 +443,14 @@ h4 {
 
 .menudeEscolha {
     display: flex;
+    flex-direction: column;
     position: relative;
-    background-color: yellow;
+    background-color: rgba(0, 132, 255, 0.281);
     border-radius: 10px;
     height: 820px;
-    width: 75%;
+    width: 1799px;
     left: 15px;
-    top: 100px;
+    top: 25px;
 }
 
 .menudeEscolha::-webkit-scrollbar {
@@ -467,9 +459,10 @@ h4 {
 
 .linhadePesquisa {
     background-color: pink;
-    position: absolute;
+    position: relative;
+    text-align: center;
     height: 80px;
-    width: 100%;
+    width: 1799px;
     border-radius: 10px;
     left: 15px;
     top: 10px;
@@ -477,9 +470,8 @@ h4 {
 
 .texto {
     border-radius: 8px;
-    position: absolute;
-    left: 450px;
-    top: 15px;
+    margin-top: 12px;
+    padding: 5px;
     height: 40px;
     width: 500px;
     border: 0.050rem solid transparent;
@@ -616,164 +608,39 @@ h4 {
 
 .menuDiario {
     background-color: rgb(255, 224, 224);
+    justify-content: space-evenly;
+    display: flex;
     position: absolute;
     height: 200px;
-    width: 100%;
+    width: 1765px;
     left: 15px;
     top: 10px;
     border-radius: 20PX;
 }
-
-
-.img1 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 50px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img1:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
-}
-
-.img2 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 260px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img2:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
-}
-
-.img3 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 460px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img3:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
-}
-
-
-.img4 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 670px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img4:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
-}
-
-.img5 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 880px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img5:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
-}
-
-.img6 {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 15px;
-    border-radius: 10px;
-    left: 1090px;
-    width: 150px;
-    height: 160px;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.img6:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border: 2px solid black;
+.menuDiario .card{
+    height: 167px;
 }
 
 .nome {
     position: absolute;
     top: 100px;
 }
-
+.returnCard{
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.returnCard:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .nextCard {
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 1290px;
-    top: 50px;
+    margin-top: 60px;
+    height: 70px;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
@@ -784,7 +651,7 @@ h4 {
     transition: 0.5s;
 }
 
-.bi-caret-right {
+.bi-caret-right, .bi-caret-left {
     font-size: 70px;
 }
 
@@ -793,8 +660,8 @@ h4 {
     background-color: transparent;
     height: 60px;
     width: 1398px;
-    top: 820px;
-    left: 28px;
+    top: -60px;
+    left: 200px;
     border-radius: 10px;
 }
 
@@ -807,8 +674,11 @@ h4 {
     width: 1360px;
     border-radius: 10px;
     background-color: red;
+    cursor: pointer;
     border: none;
-    transition: 0.5s;
+}
+.botaoCompra:active{
+    background-color: rgb(255, 35, 35);
 }
 
 .botaoCompra p {
@@ -816,37 +686,48 @@ h4 {
 }
 
 .botaoCompra:hover {
-    scale: 1.010;
-    transition: 0.5s;
-    box-shadow: 6px 8px 18px 0px;
+    animation: hovro 1s forwards;
+}
+
+@keyframes hovro{
+    0%{
+        box-shadow: 6px 8px 18px 0px;
+    }
+    100%{
+        scale: 1.005;
+        box-shadow: 6px 8px 18px 0px;
+    }
 }
 
 .menuComidas {
     background-color: rgb(255, 102, 0);
-    position: absolute;
+    position: relative;
     height: 480px;
-    width: 1396px;
+    width: 1765px;
     left: 15px;
     top: 230px;
     border-radius: 10px;
-    justify-content: space-evenly;
-    display: flex;
+    justify-content: space-around;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 15px;
 }
 
 .card {
     background-color: rgb(255, 255, 255);
-    margin-top: 25px;
-    margin-right: 20px;
+    margin-top: 12px;
     border-radius: 10px;
     width: 170px;
-    height: 200px;
+    height: 13em;
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     text-align: center;
     transition: 0.5s;
     cursor: pointer;
+    position: relative;
 }
 
 .card:hover {
@@ -1032,6 +913,7 @@ h4 {
 
 .add {
     /*adicionar_Quantia*/
+    cursor: pointer;
     position: absolute;
     left: 56px;
     border-radius: 0px 10px 10px 0px;
@@ -1045,6 +927,7 @@ h4 {
 
 .remove {
     /*remover_quantia*/
+    cursor: pointer;
     position: absolute;
     left: 0;
     border-radius: 10px 0px 0px 10px;
