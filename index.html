@@ -38,7 +38,7 @@
                     alt=""></button>
         </nav>
         <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
-        <nav class="menuLateralItensSecundarios">
+        <nav id="maisItens" class="menuLateralItensSecundarios">
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-search"></i></button>
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-car-front-fill"></i>
                 <p>Delivery</p>
@@ -46,7 +46,7 @@
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-person-vcard"></i>
                 <p>Cadastro</p>
             </button>
-            <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
+            <button id="verMais" class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
                 <p>Ver mais</p>
             </button>
         </nav>
@@ -656,6 +656,13 @@
 
         btnMenu.addEventListener('click', () => {
             menuLateral.classList.toggle('menuLateralAtivo');
+        });
+
+        const btnVermais = document.getElementById('maisItens');
+        const menuVermais = document.getElementById('verMais');
+
+        btnVermais.addEventListener('click', () => {
+            menuVermais.classList.toggle('menuVermaisAtivo');
         });
 
     </script>

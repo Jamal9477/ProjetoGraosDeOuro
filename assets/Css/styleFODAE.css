@@ -166,6 +166,13 @@ body {
     left: 15%;
 }
 
+#verMais{
+    width: 70px;
+    position: relative;
+}
+
+
+
 .menuLateralItensTerciarios {
     position: relative;
     display: flex;
@@ -211,6 +218,11 @@ body {
     top: 5px;
     left: 97px;
     border: 1px solid rgb(180, 178, 178);
+}
+
+.verMais.menuVermaisAtivo{
+    transition: 1s;
+    left: 0px;
 }
 
 .standartItemPrincipal {
