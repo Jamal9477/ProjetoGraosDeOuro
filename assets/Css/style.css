@@ -1,51 +1,966 @@
-p{
+* {
+    top: 0;
+    left: 0;
     margin: 0;
 }
-button {
-  --color: #0bad2e;
-  font-family: inherit;
-  display: flex;
-  flex-direction: column;
-  width: 8em;
-  height: 2.6em;
-  margin: 20px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--color);
-}
-button:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: var(--color);
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
 }
 
-button:hover {
-  color: #fff;
+.menuLateral {
+    top: 5px;
+    left: -230px;
+    border-radius: 10px;
+    background-color: rgb(70, 89, 141);
+    border: 1px solid rgb(180, 178, 178);
+    z-index: 1;
+    height: 98.8vh;
+    width: 300px;
+    justify-content: right;
+    display: grid;
+    grid-template-columns: 70px;
+    grid-template-rows: 100px 1px 325px 35px 100px;
+    position: relative;
+    transition: 1s;
+}
+.menuLateral.menuLateralAtivo{
+    transition: 1s;
+    left: 0px;
+}
+.menuLateralItensPrimarios {
+    position: relative;
 }
 
-button:before {
-  top: 100%;
-  left: 100%;
-  transition: all 0.7s;
+.menuLateralItensPrimarios button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: black;
+    background-color: transparent;
 }
 
-button:hover:before {
-  top: -30px;
-  left: -30px;
+.btnMenu {
+    position: relative;
+    height: 2.6em;
+    width: auto;
+    --color: #5d91d4;
+    border: 2px solid var(--color);
+    color: var(--color);
+    font-family: inherit;
+    display: grid;
+    transition: color 0.5s;
+    font-size: 17px;
+    border-radius: 9px;
+    font-weight: 500;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
 }
 
-button:active:before {
-  background: #536b5654;
-  transition: background 0s;
+.btnMenu i {
+    position: absolute;
+}
+
+.btnMenu p {
+    font-size: 13.4px;
+    top: 50%;
+    left: 8px;
+    position: absolute;
+    transition: 0.3s;
+
+}
+
+.btnMenu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.btnMenu:hover {
+
+    transition: 0.3s;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0.15rem 0.15rem 10px;
+    --color: transparent;
+    background-color: transparent;
+    background: transparent;
+
+}
+
+.btnMenu:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.btnMenu:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btnMenu:active:before {
+    background: #00a594;
+    transition: background 0s;
+}
+
+.btnMenu i {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: black;
+    transition: 0.2s;
+}
+
+.btnMenu:hover i {
+    color: rgb(0, 82, 107);
+    border-radius: 2.5px;
+    transition: 0.2s;
+}
+
+.menuLateralItensSecundarios {
+    top: 55px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    position: relative;
+}
+
+.menuLateralItensSecundarios button {
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.menuLateralItensSecundarios button i {
+    left: 37%;
+    position: absolute;
+    color: black;
+}
+
+.menuLateralItensSecundarios button p {
+    text-shadow: 1px 0px 0px;
+    color: rgb(14, 41, 44);
+    position: absolute;
+    top: 29px;
+    left: 15%;
+}
+
+.menuLateralItensTerciarios {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 125px;
+    width: 70px;
+    background-color: transparent
+}
+
+.menuLateralItensTerciarios button {
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.menuLateralItensTerciarios button i {
+    left: 37%;
+    position: absolute;
+    color: black;
+}
+
+.menuLateralItensTerciarios button p {
+    text-shadow: 1px 0px 0px;
+    color: rgb(14, 41, 44);
+    position: absolute;
+    top: 29px;
+    left: 15%;
+}
+
+.standart {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background-color: rgb(70, 89, 141);
+    width: 1799px;
+    z-index: 0;
+    height: 53px;
+    border-radius: 10px;
+    top: 5px;
+    left: 97px;
+    border: 1px solid rgb(180, 178, 178);
+}
+
+.standartItemPrincipal {
+    margin-left: 90px;
+    gap: 20px;
+}
+
+#btnQR {
+    width: 130px;
+    top: 7px;
+    position: relative;
+}
+
+.bi-qr-code {
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+#btnWpp {
+    --color: #0bad2e;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    height: 2.6em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    top: -14px;
+}
+
+#btnWpp:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#btnWpp:hover {
+    color: #fff;
+}
+
+#btnWpp:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+#btnWpp:active{
+    border: 1px solid black;
+}
+
+#btnWpp:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+#btnWpp:active:before {
+    background: #000000;
+    transition: background 0s;
+}
+
+#btnWpp i {
+    color: greenyellow;
+}
+
+.btnPrincipal {
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.btnPrincipal i {
+    margin-top: 3px;
+}
+
+.graosdeOuro {
+    margin-top: 13px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.standartItemSecundario {
+    margin-right: 125px;
+}
+
+#btnStatus {
+    width: 100px;
+    position: relative;
+    top: 5px;
+    left: -20px;
+}
+
+#btnDeliveryON {
+    position: relative;
+    left: -180px;
+    top: -40px;
+    width: 100;
+}
+
+#status {
+    background-color: rgb(131, 130, 130);
+    width: 120px;
+    display: grid;
+    grid-template-columns: 140px 4px 20px;
+    grid-template-rows: 60px;
+    margin-right: 150px;
+    border-radius: 0px;
+    position: relative;
+}
+
+#status h5 {
+    margin-top: 17px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#status div {
+    display: flex;
+}
+
+#status div h6 {
+    gap: 5px;
+    display: inline-flex;
+    background-color: gray;
+}
+
+#status div h6 p {
+    margin: 0;
+}
+
+#status button {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+#status button .bi-toggle-off {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item h6,
+h5,
+h4 {
+    margin: 0;
+}
+
+.item h6 {
+    color: red;
+    margin-left: 1px;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.item h5 {
+    color: green;
+    margin-left: 1px;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.fodase {
+    background-color: white;
+    border: 0;
+}
+
+@keyframes trocaDeCor {
+    0% {
+        color: rgb(2, 177, 107);
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+#meuMenu {
+    background-color: #ffffff;
+    overflow: hidden;
+    /* Esconde o conteúdo que passar do limite */
+    max-height: 200px;
+    /* Altura máxima dele aberto */
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    transition: max-height 0.4s ease-out;
+    /* Efeito suave de descida */
+    position: fixed;
+    z-index: -1;
+}
+
+/* Estado escondido */
+#meuMenu.menu-escondido {
+    max-height: 0;
+    z-index: -1;
+}
+
+/* Estilo dos links do menu */
+#meuMenu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.itemsPricinpais {
+    background-color: transparent;
+    position: absolute;
+    display: grid;
+    top: 60px;
+    left: 82px;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menudeEscolha {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(0, 132, 255, 0.281);
+    border-radius: 10px;
+    height: 820px;
+    width: 1799px;
+    left: 15px;
+    top: 25px;
+}
+
+.menudeEscolha::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.linhadePesquisa {
+    background-color: pink;
+    position: relative;
+    text-align: center;
+    height: 80px;
+    width: 1799px;
+    border-radius: 10px;
+    left: 15px;
+    top: 10px;
+}
+
+.texto {
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 5px;
+    height: 40px;
+    width: 500px;
+    border: 0.050rem solid transparent;
+}
+
+.texto:hover {
+    border: 0.050rem solid black;
+}
+
+.texto::placeholder {
+    position: absolute;
+    left: 14px;
+    border: none;
+}
+
+.bi-arrow-left {
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+.voltar {
+    position: absolute;
+    top: 22px;
+    left: 80px;
+    font-size: 30px;
+}
+
+.bi-toggle-off {
+    position: absolute;
+    top: 20px;
+    left: 1100px;
+    font-size: 40px;
+}
+
+.exibir {
+    position: absolute;
+    left: 1150px;
+    top: 26px;
+    font-size: 25px;
+}
+
+.bi-search {
+    position: absolute;
+    top: 158px;
+    left: 25px;
+}
+.menuDiario {
+    background-color: rgb(255, 224, 224);
+    justify-content: space-evenly;
+    display: flex;
+    position: absolute;
+    height: 200px;
+    width: 1765px;
+    left: 15px;
+    top: 10px;
+    border-radius: 20PX;
+}
+.menuDiario .card{
+    height: 167px;
+}
+
+.cardImage{
+    top: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    position: relative;
+    justify-self: center;
+    height: 84%;
+    background-color: red;
+    width: 100%;
+}
+
+.nome {
+    position: relative;
+    justify-self: center;
+    font-size: 1.5em;
+}
+.returnCard{
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.returnCard:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.nextCard {
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nextCard:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.bi-caret-right, .bi-caret-left {
+    font-size: 70px;
+}
+
+.botaodeCompra {
+    position: relative;
+    background-color: transparent;
+    height: 60px;
+    width: 1398px;
+    top: -60px;
+    left: 200px;
+    border-radius: 10px;
+}
+
+
+.botaoCompra {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 40px;
+    width: 1360px;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+}
+.botaoCompra:active{
+    background-color: rgb(255, 35, 35);
+}
+
+.botaoCompra p {
+    color: white;
+}
+
+.botaoCompra:hover {
+    animation: hovro 1s forwards;
+}
+
+@keyframes hovro{
+    0%{
+        box-shadow: 6px 8px 18px 0px;
+    }
+    100%{
+        scale: 1.005;
+        box-shadow: 6px 8px 18px 0px;
+    }
+}
+
+.menuComidas {
+    background-color: rgb(255, 102, 0);
+    position: relative;
+    height: 480px;
+    width: 1765px;
+    left: 15px;
+    top: 230px;
+    border-radius: 10px;
+    justify-content: space-around;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 15px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    margin-top: 12px;
+    border-radius: 10px;
+    width: 170px;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.rapaz {
+    position: absolute;
+    top: 470px;
+    left: 25px;
+    height: 200px;
+    width: 1380px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.menuCompra {
+    background-color: white;
+    width: 25%;
+    opacity: 1;
+    z-index: -1;
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuCompraPedinte {
+    background-color: gray;
+    height: 10%;
+    width: 84%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.menuCompraPedinte h4 {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 14px;
+    font-size: 21px;
+    height: 50%;
+}
+
+.menuCompraTableHero {
+    background-color: red;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menuCompraTableHero span {
+    height: 30px;
+    background-color: blue;
+    width: 30px;
+    border-radius: 5px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+#menuCompraItens {
+    background-color: gray;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    gap: 5px;
+    margin: 3px;
+    width: 84%;
+    height: 50%;
+    animation: scroll 5s linear infinite;
+}
+
+.itemMenuCompra {
+    background-color: white;
+    border: 1px solid black;
+    line-height: 25px;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.crcItem1 {
+    position: relative;
+    background-color: rgba(0, 0, 255, 0);
+    display: grid;
+    top: 1px;
+    width: 45%;
+}
+
+.crcItem1 h6 {
+    margin: 0;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.displayAmount {
+    position: relative;
+    left: 15px;
+    display: flex;
+    background-color: white;
+    width: 30px;
+    height: 15px;
+}
+
+.displayAmount p {
+    margin: 0;
+}
+
+#valorUnitario {
+    display: flex;
+    gap: 8px;
+    color: rgb(128, 128, 128);
+}
+
+#valorUnitario p {
+    margin: 0;
+}
+
+.crcItem2 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    width: 45%;
+}
+
+.crcItem2 div span .bi-chat-dots {
+    position: relative;
+    top: 4px;
+    color: rgba(128, 128, 128, 0.842);
+    font-size: 20px;
+}
+
+.crcItem2 span .bi-trash {
+    position: relative;
+    top: 4px;
+    color: red;
+    font-size: 20px;
+}
+
+.addAmout {
+    /*botoes de quantia*/
+    position: relative;
+    top: 4px;
+    display: flex;
+    background-color: snow;
+    border: 1px solid black;
+    width: 80px;
+    height: 22px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.addAmout input {
+    position: absolute;
+    left: 26px;
+    top: 2px;
+    height: min-content;
+    background-color: wheat;
+    height: 16px;
+    width: 24px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.add {
+    /*adicionar_Quantia*/
+    cursor: pointer;
+    position: absolute;
+    left: 56px;
+    border-radius: 0px 10px 10px 0px;
+    width: 24px;
+    height: 22px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: red;
+    transition: 0.1s;
+}
+
+.remove {
+    /*remover_quantia*/
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    border-radius: 10px 0px 0px 10px;
+    width: 24px;
+    height: 22px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: red;
+    transition: 0.1s;
+}
+
+.remove i,
+.add i {
+    /*centralizacao*/
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+.add:hover,
+.remove:hover {
+    /*anmt_fundoAdd*/
+    background-color: #763f22;
+    color: black;
+    transition: 0.1s;
+}
+
+#valorTotal {
+    display: flex;
+    justify-self: right;
+    margin-right: 15px;
+    gap: 8px;
+}
+
+#valorTotal p,
+h6 {
+    color: black;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+#confirmTotalItems {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+#confirmTotalItems:checked~.confirmSubtotalItems .confirmationAcept {
+    opacity: 1;
+    z-index: 1;
+}
+
+#confirmTotalItems:checked~.confirmSubtotalItems .confirmationRecused {
+    opacity: 0;
+    z-index: -2;
+}
+
+.confirmSubtotalItems {
+    position: absolute;
+    left: 15px;
+    width: 200px;
+}
+
+.confirmationAcept {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+.confirmationRecused {
+    position: absolute;
+}
+
+.tableSubtotal {
+    height: 55%;
+    background-color: gray;
+}
+
+.tableConfirmItems {
+    height: 55px;
+    background-color: burlywood;
+}
+
+.endTableItems {
+    height: 67px;
+    background-color: red;
+}
+
+.tableshowSubtotal {
+    display: flex;
+}
+
+.tableAmountTotal p,
+span {
+    margin: 0;
+    display: flex;
+}
+
+.tableOFConfirmItems {
+    position: relative;
+}
+
+.mesaTotalFooter {
+    display: flex;
+    flex-direction: column;
 }
