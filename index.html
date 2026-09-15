@@ -30,9 +30,10 @@
 <body>
 
 
-    <section class="menuLateral">
+    <section id="menu-lateral" class="menuLateral">
         <nav class="menuLateralItensPrimarios">
-            <button class="btnMenu btnMenuzin"><i style="font-size: 30px;" class="bi bi-list"></i>asd</button>
+            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;"
+                    class="bi bi-list"></i></button>
             <button><img style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png"
                     alt=""></button>
         </nav>
@@ -175,7 +176,7 @@
                 <span class="card">
                     <span class=""></span>
                 </span>
-            
+
                 <span class="card">
                     <span class=""></span>
                 </span>
@@ -648,7 +649,16 @@
 
     </main>
 
-    
+
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const menuLateral = document.getElementById('menu-lateral');
+
+        btnMenu.addEventListener('click', () => {
+            menuLateral.classList.toggle('menuLateralAtivo');
+        });
+
+    </script>
 
 </body>
 
