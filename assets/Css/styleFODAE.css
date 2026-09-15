@@ -10,10 +10,11 @@ body {
     margin: 0;
     height: 110vh;
     background-repeat: no-repeat;
+    z-index: 0;
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to bottom right, blue, white);
+    background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
 }
 
 .menuLateral {
@@ -22,8 +23,7 @@ body {
     border-radius: 10px;
     background-color: rgb(70, 89, 141);
     border: 1px solid rgb(180, 178, 178);
-    z-index: 0;
-    z-index: 2;
+    z-index: 1;
     height: 98.8vh;
     width: 300px;
     justify-content: right;
@@ -31,8 +31,11 @@ body {
     grid-template-columns: 70px;
     grid-template-rows: 100px 1px 325px 35px 100px;
     position: relative;
+    transition: 1s;
 }
-.btnMenuzin:active {
+.menuLateral.menuLateralAtivo{
+    transition: 1s;
+    left: 0px;
 }
 .menuLateralItensPrimarios {
     position: relative;
@@ -202,6 +205,7 @@ body {
     justify-content: space-between;
     background-color: rgb(70, 89, 141);
     width: 1799px;
+    z-index: 0;
     height: 53px;
     border-radius: 10px;
     top: 5px;
@@ -436,7 +440,7 @@ h4 {
     display: grid;
     top: 60px;
     left: 82px;
-    z-index: 2;
+    z-index: 0;
     height: 100%;
     width: 100%;
 }
