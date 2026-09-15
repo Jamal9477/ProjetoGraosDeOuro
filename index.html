@@ -38,7 +38,7 @@
                     alt=""></button>
         </nav>
         <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
-        <nav id="maisItens" class="menuLateralItensSecundarios">
+        <nav class="menuLateralItensSecundarios">
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-search"></i></button>
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-car-front-fill"></i>
                 <p>Delivery</p>
@@ -46,9 +46,14 @@
             <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-person-vcard"></i>
                 <p>Cadastro</p>
             </button>
-            <button id="verMais" class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
+            <button id="btnVerMais" class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
                 <p>Ver mais</p>
             </button>
+            <div id="menuVerMais">
+                <button id="" class="btnMenu">login</button>
+                <button id="" class="btnMenu">localização</button>
+                <button id="" class="btnMen"></button>
+            </div>
         </nav>
         <div style="background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
         <nav style="" class="menuLateralItensTerciarios">
@@ -662,11 +667,11 @@
             menuLateral.classList.toggle('menuLateralAtivo');
         });
 
-        const btnVermais = document.getElementById('maisItens');
-        const menuVermais = document.getElementById('verMais');
+        const menuVerMais = document.getElementById('menuVerMais');
+        const btnVerMais = document.getElementById('btnVerMais');
 
-        btnVermais.addEventListener('click', () => {
-            menuVermais.classList.toggle('menuVermaisAtivo');
+        btnVerMais.addEventListener('click', () => {
+            menuVerMais.classList.toggle('menuVerMaisAtivo');
         });
 
         const btntoggle = document.getElementById('btnDeliveryON');
