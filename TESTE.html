@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="btn1()">Boas vindas</button>
+
+    <button id="sent" onclick="sent()">Enviar</button>
+
+    <input type="text" name="" id="GET" placeholder="Escreva seu nome..." required>
+
+    <h1 id="Mame">Sem nome</h1>
+
+    <script>
+        function btn1() {
+            let name = prompt("Digite seu nome:");
+            document.getElementById("Mame").innerHTML = "Olá " + name;
+        }
+
+
+
+        const a = document.getElementById('sent')
+        const input = document.getElementById('GET');
+        const h1 = document.getElementById('Mame');
+
+        a.addEventListener('click', function () {
+            h1.textContent = input.value;
+        });
+
+
+
+    </script>
+</body>
+
+</html>
