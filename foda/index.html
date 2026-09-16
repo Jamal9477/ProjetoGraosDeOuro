@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container1">
+        <p class="p1" id="tomate"> Inicio do codigo</p>
+        <img id="spider1" src="" alt="aranha spawn">
+    </div>
+    <div class="container">
+        <button class="btn1" onclick="oi()">Cadastro</button>
+
+        <button class="btn1" onclick="spider()">Homem-aranha </button>
+
+        <button id="fodase" class="btn1">Botao3 </button>
+        <button onclick="apagar()" class="btn1">Botao4 </button>
+    </div>
+
+    <script>
+        function oi() {
+            let a = prompt('digite seu nome:');
+            alert('seja bem vindo' + a);
+            let b = prompt('digite sua senha');
+            alert('senha correta. pode passar');
+            document.getElementById('tomate').innerHTML = "Bem vindo  " + a;
+        }
+        function spider() {
+            let aranha = document.getElementById('spider1');
+            let b = prompt('Escolha o tamanho da peça do aranha');
+            aranha.src = "https://static.wikia.nocookie.net/liga-da-zueira-oficial/images/3/32/Earth616_PeterParker_Render_NoiseRemoval.png/revision/latest?cb=20210203001438&path-prefix=pt-br"
+            aranha.style.height = b + "px";
+            aranha.style.width = b + "px";
+
+            document.getElementById('fodase').style.height = b + "px";
+        }
+        function apagar(){
+            document.getElementById('spider1').src=("");
+            
+        }
+    </script>
+
+
+</body>
+
+</html>

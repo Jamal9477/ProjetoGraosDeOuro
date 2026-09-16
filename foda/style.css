@@ -1,0 +1,47 @@
+*{
+    color: white;
+}
+.btn1{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(1, 3, 83);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.btn1:hover{
+    background-color: rgb(117, 236, 197);
+    color: black;
+    transition: 0.5s;
+}
+.btn1:active{
+    background-color: rgb(47, 0, 255);
+    transition: 0.1ms;
+}
+p{
+    justify-self: center;
+    font-size: 26px;
+}
+body{
+    background-color: black;
+    gap: 10px;
+    display: grid;
+}
+.container{
+    justify-self: center;
+    display: flex;
+    gap: 15px;
+}
+.container1{
+    width: 100%;
+    display: grid;
+}
+.container1 img{
+    position: absolute;
+    right: 0;
+}
