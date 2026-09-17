@@ -32,8 +32,7 @@
 
     <section id="menu-lateral" class="menuLateral">
         <nav class="menuLateralItensPrimarios">
-            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;"
-                    class="bi bi-list"></i></button>
+            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;" class="bi bi-list"></i></button>
             <button><img style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png"
                     alt=""></button>
         </nav>
@@ -86,18 +85,16 @@
         <img style="height: 55px;" src="assets/Css/ImagesCss/PageTitle1.png" alt="">
 
         <nav style="display: flex;" class="standartItemSecundario">
-            <div id="stats">
-                <button id="btnStatus" class="btnMenu">
-                    <h5>Staus <i class="bi bi-gear-fill"
-                            style="font-size: 20px; margin-top: 9px; margin-left: 18px;"></i></h5>
-                </button>
-                <div>
+            <button id="btnToggle" onclick="ToggleActive()" class="btnMenu">
+                <h3>Delivery ON</h3>
+                <div class="toggle">
+                    <span id="toggle" class="toggle-off"></span>
                 </div>
-                <button id="btnDeliveryON" class="btnMenu" style="display: flex; flex-direction: column;">
-                    <h3>Delivery ON</h3>
-                    <i id="trocaToggle" class="bi bi-toggle-off" style="font-size: 20px; margin-top: 10px; margin-left: 20px; "></i>
-                </button>
-            </div>
+            </button>
+            <button id="btnStatus" class="btnMenu">
+                <h5>Staus <i class="bi bi-gear-fill" style="font-size: 20px; margin-top: 9px; margin-left: 18px;"></i>
+                </h5>
+            </button>
             <button id="btnGarcomDigital" class="btnMenu"
                 style="display: flex; flex-direction: column; height: 40px; margin-top: 5px; border-radius: 10px;">
                 <h3>Garçom Digital</h3>
@@ -136,15 +133,17 @@
                     <h2 class="nome">Lanches</h2>
                 </span>
                 <span class="card">
-                    <span class="cardImage"></span>
+                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/caféDaManhã.png"
+                            alt=""></span>
                     <h2 class="nome">Cafés da manhã</h2>
                 </span>
                 <span class="card">
-                    <span class="cardImage"></span>
+                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/Refeição.png" alt=""></span>
                     <h2 class="nome">Refeições</h2>
                 </span>
                 <span class="card">
-                    <span class="cardImage"></span>
+                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/sobremesas.png"
+                            alt=""></span>
                     <h2 class="nome">Sobremesas</h2>
                 </span>
                 <span class="card">
@@ -675,11 +674,11 @@
             menuVerMais.classList.toggle('menuVerMaisAtivo');
         });
 
-        const btntoggle = document.getElementById('btnDeliveryON');
-        const trocatoggle = document.getElementById('trocaToggle');
+        const toggle = document.getElementById('toggle');
+        const btnToggle = document.getElementById('btnToggle');
 
-        btntoggle.addEventListener('click', () => {
-            trocatoggle.classList.toggle('bi-toggle-on');
+        btnToggle.addEventListener('click', () => {
+            toggle.classList.toggle('toggle-on');
         });
 
     </script>
