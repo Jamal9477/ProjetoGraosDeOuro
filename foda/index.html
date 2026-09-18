@@ -12,6 +12,7 @@
     <div class="container1">
         <p class="p1" id="tomate"> Inicio do codigo</p>
         <img id="spider1" src="" alt="aranha spawn">
+        <video id="video" src="" autoplay playsinline>xxx</video>
     </div>
     <div class="container">
         <button class="btn1" onclick="oi()">Cadastro</button>
@@ -20,6 +21,8 @@
 
         <button id="fodase" class="btn1">Botao3 </button>
         <button onclick="apagar()" class="btn1">Botao4 </button>
+        <button id="cameraON()" class="btn1">Camera ON</button>
+        <button id="cameraOFF()" class="btn1">Camera OFF</button>
     </div>
 
     <script>
@@ -39,9 +42,21 @@
 
             document.getElementById('fodase').style.height = b + "px";
         }
-        function apagar(){
-            document.getElementById('spider1').src=("");
-            
+        function apagar() {
+            document.getElementById('spider1').src = ("");
+
+        }
+
+        async function cameraON() {
+            alert('funcionou a camera');
+            const vidio = await navigator.mediaDevices.getUserMedia({
+                video: true, audio: true
+            })
+            document.querySelector('#vidio').srcObject = vidio;
+        }
+        async function cameraOFF() {
+            alert('funcionou a camera');
+            document.querySelector('#video').srcObject = null;
         }
     </script>
 

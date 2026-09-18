@@ -550,39 +550,6 @@ h4 {
     font-size: 1.5em;
 }
 
-.returnCard {
-    background-color: rgb(255, 255, 255);
-    margin-top: 60px;
-    height: 70px;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.returnCard:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.nextCard {
-    background-color: rgb(255, 255, 255);
-    margin-top: 60px;
-    height: 70px;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.nextCard:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.bi-caret-right,
-.bi-caret-left {
-    font-size: 70px;
-}
-
 .botaodeCompra {
     position: relative;
     background-color: transparent;
