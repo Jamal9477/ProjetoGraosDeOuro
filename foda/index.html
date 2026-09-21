@@ -13,6 +13,7 @@
         <p class="p1" id="tomate"> Inicio do codigo</p>
         <img id="spider1" src="" alt="aranha spawn">
         <video id="video" src="" autoplay playinline>xxx</video>
+        <div id="resultado"></div>
     </div>
     <div class="container">
         <button class="btn1" onclick="oi()">Cadastro</button>
@@ -23,6 +24,7 @@
         <button onclick="apagar()" class="btn1">Botao4 </button>
         <button onclick="cameraON()" class="btn1">Camera ON</button>
         <button onclick="cameraOFF()" class="btn1">Camera OFF</button>
+        <button onclick="localizacao()" id="btn5" class="btn1">location</button>
     </div>
 
     <script>
@@ -58,6 +60,20 @@
             alert('funcionou a camera');
             document.querySelector('#vidio').srcObject = null;
         }
+
+        function localizacao() {
+            alert('funfou')
+            const resultado = document.getElementById('resultado')
+            resultado.innerHTML = "Buscando localização";
+            navigator.geolocation.getCurrentPosition((position) => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                alert("Sua latitude é:  " + lat + "    " + "Esta é sua longitude:  " + lon);
+            });
+
+        }
+
+
     </script>
 
 
