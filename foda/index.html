@@ -12,7 +12,7 @@
     <div class="container1">
         <p class="p1" id="tomate"> Inicio do codigo</p>
         <img id="spider1" src="" alt="aranha spawn">
-        <video id="video" src="" autoplay playsinline>xxx</video>
+        <video id="video" src="" autoplay playinline>xxx</video>
     </div>
     <div class="container">
         <button class="btn1" onclick="oi()">Cadastro</button>
@@ -21,8 +21,8 @@
 
         <button id="fodase" class="btn1">Botao3 </button>
         <button onclick="apagar()" class="btn1">Botao4 </button>
-        <button id="cameraON()" class="btn1">Camera ON</button>
-        <button id="cameraOFF()" class="btn1">Camera OFF</button>
+        <button onclick="cameraON()" class="btn1">Camera ON</button>
+        <button onclick="cameraOFF()" class="btn1">Camera OFF</button>
     </div>
 
     <script>
@@ -56,7 +56,7 @@
         }
         async function cameraOFF() {
             alert('funcionou a camera');
-            document.querySelector('#video').srcObject = null;
+            document.querySelector('#vidio').srcObject = null;
         }
     </script>
 

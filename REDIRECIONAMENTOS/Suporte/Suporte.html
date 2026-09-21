@@ -27,58 +27,103 @@
 
         <section class="conteudoDescription">
 
-            <span>
-                <h4>Seja bem vindo(a)</h4>
-                <h4></h4>
+            <span class="conteudoDescriptionWelcome">
+                <h4>Seja bem vindo(a),</h4>
+                <h4>USER.NAME</h4>
             </span>
 
-            <div>
+            <div class="conteudoDescriptionHelp1">
                 <p>
                     Aqui você poderá fazer quaisquer observações referentes a utilização do site ou alguma
                     inconveniencia
                     com um de seus pedidos.
                 </p>
                 <p>
-                    Por motivos de eficiencia e velocidade, pedimos que por favor deixe detalhes descritivos dos seus problemas.
+                    Por motivos de eficiencia e velocidade, pedimos que por favor deixe detalhes descritivos dos seus
+                    problemas.
                     Para facil entendimento, renomeie e coloque descrições em seus anexos(caso aplicavel).
                 </p>
             </div>
 
+            <div class="conteudoDescriptionHelp2">
+
+            </div>
+
         </section>
-        
-        <div class="conteudoSuport" >
-            
+
+        <div class="conteudoSuport">
+
             <section class="conteudoSuportFormulario">
                 <div class="conteudoContainer1">
                     <div>
-                        <h5 style="margin-left: 15px; font-size: 25px;">Digite sua reclamação:</h5>
+                        <div style="display: flex; gap: 2px;">
+                            <button class="info"><i class="bi bi-info-circle"></i></button>
+                            <h5 style="font-size: 25px;">Digite sua reclamação:</h5>
+                        </div>
                         <input class="textoReclamacao" type="text" placeholder="texto...">
                     </div>
                     <div style="background-color: red;">
                         <div style="display: flex;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
-                            <h5 style="margin-left: 15px; font-size: 25px;">Id do pedido(caso aplicavel):</h5>
+                            <h5 style="font-size: 25px;">Id do pedido(caso aplicavel):</h5>
                         </div>
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;" type="text">
+                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
+                            type="text">
                     </div>
                     <div>
-                        <h5 style="margin-left: 15px; font-size: 25px;">Digite seu email:</h5>
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;" type="email" name="" id="">
+                        <div style="display: flex;">
+                            <button class="info"><i class="bi bi-info-circle"></i></button>
+                            <h5 style="font-size: 25px;">Digite seu email:</h5>
+                        </div>
+                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
+                            type="email" name="" id="">
                     </div>
-                    <div>
-                        <h5 style="margin-left: 15px; font-size: 25px;"></h5>
+                    <div style="display: flex; gap: 10px;">
+                        <div style="display: flex;">
+                            <div class="container">
+                                <details class="menu-retratil">
+                                    <summary class="botao-recomendar">
+                                        Estime sua prioridade
+                                        <span class="seta">▼</span>
+                                    </summary>
+
+                                    <div class="conteudo-opcoes">
+                                        <button id="priorityLow" class="item-opcao">Tolerável</button>
+                                        <button id="priorityMedium" class="item-opcao">Importante</button>
+                                        <button id="priorityHigh" class="item-opcao">Imediato</button>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="container">
+                                <details class="menu-retratil">
+                                    <summary class="botao-recomendar">
+                                        Problema
+                                        <span class="seta">▼</span>
+                                    </summary>
+                                    <div class="conteudo-opcoes">
+                                        <button id="" class="item-opcao">Problemas de UI</button>
+                                        <button id="" class="item-opcao">Problemas no site</button>
+                                        <button id="" class="item-opcao">Problemas</button>
+                                        <button id="" class="item-opcao">Problemas na entrega</button>
+                                        <button id="" class="item-opcao">Pedido incorreto</button>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="conteudoContainer2">
-                        <div class="showAnexo"></div>
-                        <div style="display: flex; margin-top: 20px; gap: 15px; justify-self: center;">
-                            <button class="btn1">Anexar imagem</button>
-                            <button class="btn1">Anexar arquivo</button>
-                        </div>
+                    <div class="showAnexo"></div>
+                    <div style="display: flex; margin-top: 20px; gap: 15px; justify-self: center;">
+                        <button class="btn1">Anexar imagem</button>
+                        <button class="btn1">Anexar arquivo</button>
+                    </div>
                 </div>
             </section>
-            
-            
+
+
             <section class="conteudoSuportButtons">
                 <div>
                     <button class="btn2">Estimar prioridade</button>
