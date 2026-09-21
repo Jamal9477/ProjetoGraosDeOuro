@@ -526,6 +526,14 @@ h4 {
     height: 167px;
 }
 
+
+.bi-star-fill{
+    font-size: 70px;
+    position: relative;
+    top: 35px;
+    left: 50px;
+}
+
 .cardImage {
     top: 0;
     margin-top: 0;
