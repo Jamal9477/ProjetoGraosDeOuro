@@ -43,16 +43,28 @@ body {
     gap: 6px;
     justify-self: center;
     height: 30px;
-    width: 300px;
+    width: 450px;
+}
+.conteudoDescriptionWelcome h4{
+  font-size: 25px;
 }
 .conteudoDescriptionHelp1{
     position: relative;
     background-color: green;
-    height: 150px;
+    height: 12rem;
     width: 100%;
 }
 .conteudoDescriptionHelp1 p{
     font-size: 19px;
+}
+.conteudoDescriptionHelp2{
+  position: relative;
+  background-color: rgb(24, 112, 24);
+  height: 150px;
+  width: 100%;
+}
+.conteudoDescriptionHelp2 p{
+  font-size: 19px;
 }
 .conteudoSuport{
     position: relative;
