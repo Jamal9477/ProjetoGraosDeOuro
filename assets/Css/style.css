@@ -1,3 +1,7 @@
+:root{
+    --
+    --primaryBorder-Color: #b4b2b2;
+}
 * {
     top: 0;
     left: 0;
@@ -243,7 +247,7 @@ body {
     border-radius: 10px;
     top: 5px;
     left: 97px;
-    border: 1px solid rgb(180, 178, 178);
+    border: 1px solid var(--primaryBorder-Color);
 }
 
 .standartItemPrincipal {

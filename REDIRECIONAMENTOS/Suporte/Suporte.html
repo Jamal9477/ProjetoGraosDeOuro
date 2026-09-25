@@ -29,7 +29,7 @@
 
             <span class="conteudoDescriptionWelcome">
                 <h4>Seja bem vindo(a),</h4>
-                <h4>USER.NAME</h4>
+                <h4 id="showUserName"></h4>
             </span>
 
             <div class="conteudoDescriptionHelp1">
@@ -43,14 +43,9 @@
                     Nossa equipe está apostos 24Horas para garantir melhor atendimento e experiencia de usuario
                     possivel.
                     <br> <br>
-                </p>
-            </div>
-
-            <div class="conteudoDescriptionHelp2">
-                <p>
-                    Por motivos de eficiencia e velocidade, pedimos que deixe detalhes 
+                    Por motivos de eficiência e velocidade no atendimento, pedimos a gentileza de registrar o máximo de detalhes possível sobre a sua solicitação. Dessa forma, nossa equipe conseguirá analisar o seu caso com precisão e fornecer um retorno muito mais rápido.
                     <br> <br>
-                    Para facil entendimento, renomeie e coloque descrições em seus anexos(caso aplicavel). 
+                    Visando garantir a máxima clareza e um fácil entendimento do seu processo, solicitamos que, caso seja aplicável, você renomeie os arquivos e adicione descrições detalhadas a cada um dos seus anexos. Essa prática evita ambiguidades e agiliza a análise da sua documentação.
                     <br> <br>
 
                 </p>
@@ -144,7 +139,15 @@
     </main>
 
 
+<script>
 
+    window.onload = function() {
+    let userName = prompt('Digite seu nome:');
+    let showUserName = document.getElementById('showUserName');
+    showUserName.innerHTML = userName
+};
+
+</script>
 
 </body>
 

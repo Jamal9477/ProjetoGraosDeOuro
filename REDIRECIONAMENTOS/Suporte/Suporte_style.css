@@ -1,3 +1,4 @@
+
 * {
     top: 0;
     left: 0;
@@ -34,37 +35,51 @@ body {
     width: 33%;
     margin-left: 30px;
     border-radius: 20px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }   
 .conteudoDescriptionWelcome{
     position: relative;
+    text-align: center;
     display: flex;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0);
     gap: 6px;
-    justify-self: center;
+    top: 0;
+    left: 80px;
     height: 30px;
     width: 450px;
 }
 .conteudoDescriptionWelcome h4{
   font-size: 25px;
 }
+#showUserName{
+  text-decoration: underline;
+  animation: pulsar 3s ease-in-out infinite;
+}
+@keyframes pulsar{
+  0%{
+    text-decoration-color: purple;
+    font-size: 25px;
+  }
+  50%{
+    text-decoration-color: purple;
+    font-size: 26px;
+  }
+  100%{
+    text-decoration-color: purple;
+    font-size: 25px;
+  }
+}
 .conteudoDescriptionHelp1{
     position: relative;
-    background-color: green;
-    height: 12rem;
+    top: 0;
+    background-color: rgba(0, 128, 0, 0);
+    height: 39rem;
     width: 100%;
 }
 .conteudoDescriptionHelp1 p{
-    font-size: 19px;
-}
-.conteudoDescriptionHelp2{
-  position: relative;
-  background-color: rgb(24, 112, 24);
-  height: 150px;
-  width: 100%;
-}
-.conteudoDescriptionHelp2 p{
-  font-size: 19px;
+    font-size: 25px;
 }
 .conteudoSuport{
     position: relative;
