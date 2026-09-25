@@ -1,0 +1,12 @@
+body{
+    background-color: blue;
+}
+#contador{
+    background-color: white;
+}
+#mais{
+    font-size: 50px;
+}
+#menos{
+    font-size: 50px;
+}

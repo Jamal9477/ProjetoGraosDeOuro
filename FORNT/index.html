@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <p id="contador">Quantidade</p>
+    <button id="mais" onclick="soma()"> + </button>
+    <button id="menos" onclick="diminui()"> - </button>
+
+    <script>
+        let contador = 0
+        function soma(){
+            console.log("mais " + 1)
+            contador = contador + 1;
+            document.getElementById("contador").innerHTML=parseInt(contador);
+        }
+        function diminui(){
+            console.log("menos " + 1)
+            contador = contador - 1;
+            if (contador < 0) {
+                contador = contador = 0
+            }
+            document.getElementById("contador").innerHTML=parseInt(contador);
+        }
+
+
+    </script>
 </body>
+
 </html>
