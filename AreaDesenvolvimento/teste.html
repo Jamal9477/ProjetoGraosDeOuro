@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .toggle {
+      display: grid;
+      position: relative;
+      background-color: gray;
+      backdrop-filter: blur(200px);
+      width: 100px;
+      height: 52px;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      border: 1px solid white;
+    }
+    .toggle-off {
+      position: absolute;
+      border-radius: 100%;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(24, 23, 23);
+      color: black;
+      box-shadow: 3px 1px 10px 1px;
+      transition: 0.5s;
+    }
+
+    .toggle-on {
+      position: absolute;
+      background-color: rgb(0, 158, 13);
+      left: 50px;
+      box-shadow: 0px 1px 10px 3px;
+      color: green;
+      transition: 0.5s;
+    }
+  
+  </style>
+</head>
+
+<body>
+
+  <button id="btnToggle" onclick="ToggleActive()" class="toggle">
+    <span id="toggle" class="toggle-off"></span>
+  </button>
+
+
+  <script>
+    const toggle = document.getElementById('toggle');
+    const btnToggle = document.getElementById('btnToggle');
+
+    btnToggle.addEventListener('click', () => {
+      toggle.classList.toggle('toggle-on');
+    });
+  </script>
+</body>
+
+</html>

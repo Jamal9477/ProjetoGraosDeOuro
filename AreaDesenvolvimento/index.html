@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Grãos de Ouro-icon2.png">
+    <link rel="stylesheet" href="assets/Css/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/Css/styleFODAE.css">
+
+    <title>Grãos de Ouro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<style>
+    /*caracteristica input*/
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #menuCompraItens::-webkit-scrollbar,
+    #menuCompraItens::-webkit-scrollbar-track {
+        margin: 0;
+        -webkit-appearance: none;
+        background-color: transparent;
+    }
+</style>
+
+<body>
+
+
+    <section id="menu-lateral" class="menuLateral">
+        <nav class="menuLateralItensPrimarios">
+            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;"
+                    class="bi bi-list"></i></button>
+            <button><img style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png"
+                    alt=""></button>
+        </nav>
+        <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
+        <nav class="menuLateralItensSecundarios">
+            <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-search"></i></button>
+            <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-car-front-fill"></i>
+                <p>Delivery</p>
+            </button>
+            <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-person-vcard"></i>
+                <p>Cadastro</p>
+            </button>
+            <button class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
+                <p>Ver mais</p>
+            </button>
+        </nav>
+        <div style="background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
+        <nav style="" class="menuLateralItensTerciarios">
+            <button class="btnMenu"><i style="font-size: 20px;" class="bi bi-question-circle"></i>
+                <p>Suporte</p>
+            </button>
+            <button class="btnMenu"><i style="font-size: 20px;" class="bi bi-box-arrow-right"></i>
+                <p>Deslogar</p>
+            </button>
+        </nav>
+    </section>
+
+
+
+    <header class="standart">
+        <nav style="display: flex;" class="standartItemPrincipal">
+            <button id="btnQR" class="btnMenu" style="display: flex; flex-direction: column; height: 40px;"><i
+                    class="bi bi-qr-code"></i>
+                <p style="margin: 0; font-size: 11px; left: 30px;">Cardápio Digital</p>
+            </button>
+            <button id="btnWpp" class="btnPrincipal" style="display: flex; flex-direction: column; height: 40px;"><i
+                    class="bi bi-whatsapp"></i>
+                <p style="margin: 0; font-size: 11px;">Envie uma mensagem</p>
+            </button>
+        </nav>
+        <h3 class="animate__animated animate__jackInTheBox"
+            style="margin-top: 15px; font-size: 30px; font-style: italic;">Cafeteria Grãos de Ouro</h3>
+
+        <img style="height: 55px;" src="assets/Css/ImagesCss/PageTitle1.png" alt="">
+
+        <nav style="display: flex;" class="standartItemSecundario">
+            <div id="stats">
+                <button id="btnStatus" class="btnMenu">
+                    <h5>Staus <i class="bi bi-gear-fill"
+                            style="font-size: 20px; margin-top: 9px; margin-left: 18px;"></i></h5>
+                </button>
+                <div>
+                </div>
+                <button id="btnDeliveryON" class="btnMenu" style="display: flex; flex-direction: column;">
+                    <h3>Delivery ON</h3>
+                    <i class="bi bi-toggle-off" style="font-size: 20px; margin-top: 10px; margin-left: 20px; "></i>
+                </button>
+            </div>
+            <button id="btnGarcomDigital" class="btnMenu"
+                style="display: flex; flex-direction: column; height: 40px; margin-top: 5px; border-radius: 10px;">
+                <h3>Garçom Digital</h3>
+                <i class="bi bi-toggle-on" style="margin-top: 12px; margin-left: 43px;"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="itemsPricinpais">
+
+        <div class="linhadePesquisa">
+            <input class="texto" type="text" placeholder="Busque produtos...">
+        </div>
+
+
+        <div class="menudeEscolha">
+            <div class="menuDiario">
+                <span class=" returnCard">
+                    <span class=""><i class="bi bi-caret-left"></i></span>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Promoções</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Mais pedidos</h2>
+                </span>
+
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Cafés</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Lanches</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Cafés da manhã</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Refeições</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Sobremesas</h2>
+                </span>
+                <span class="card">
+                    <span class="cardImage"></span>
+                    <h2 class="nome">Especias</h2>
+                </span>
+                <span class=" nextCard">
+                    <span class=""><i class="bi bi-caret-right"></i></span>
+                </span>
+            </div>
+            <div class="menuComidas">
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+                <span class="card">
+                    <span class="">
+                        <marquee behavior="alternate" direction="down" style="height: 100%; width: 100%;">
+                            <marquee behavior="alternate" style="width: 150px;">CVD</marquee>
+                        </marquee>
+                    </span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+
+                <span class="card">
+                    <span class=""></span>
+                </span>
+            </div>
+        </div>
+
+        <div class="botaodeCompra">
+            <button class="botaoCompra">
+                <p>Fazer pedido</p>
+            </button>
+        </div>
+
+        <section class="menuCompra">
+            <div class="menuCompraPedinte">
+                <h4>Pedir para</h4>
+                <div class="menuCompraTableHero">
+                    <span>+</span>
+                    <span>+</span>
+                </div>
+            </div>
+            <div id="menuCompraItens">
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+                <div class="itemMenuCompra">
+                    <div class="crcItem1">
+                        <h6>Cappuccino grande</h6>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="displayAmount"><span id="requiredAmout">100</span>
+                                <p>x</p>
+                            </div>
+                            <div id="valorUnitario">
+                                <p>R$</p> <span id="requireedAmoutUnt">00,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crcItem2">
+                        <div style="display: flex; gap: 10px; justify-self: right; margin-right: 14px;">
+                            <span><i class="bi bi-chat-dots"></i></span>
+                            <div class="addAmout">
+                                <button class="remove"><i class="bi bi-dash"></i></button>
+                                <input type="number" placeholder="0">
+                                <button class="add"><i class="bi bi-plus"></i></button>
+                            </div>
+                            <span><i class="bi bi-trash"></i></span>
+                        </div>
+                        <span id="valorTotal">
+                            <p>R$</p>
+                            <h6 id="takeTotalAmount">00,00</h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="linha"></div>
+            <footer class="mesaTotalFooter">
+                <div class="tableSubtotal">
+                    <div class="tableshowSubtotal">
+                        <h5>Subtotal</h5>
+                        <div class="tableAmountTotal">
+                            <p>R$</p><span id="showAmountTotal">
+                                <h6 id="takeSubtotal">00,00</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="">Descartar todos os itens do pedido</a>
+                </div>
+                <div class="linha"></div>
+                <div class="tableConfirmItems">
+                    <h5>Confirmação de itens</h5>
+                    <div class="tableOFConfirmItems">
+                        <input type="checkbox" name="confirmItems" id="confirmTotalItems">
+                        <label for="confirmTotalItems" class="confirmSubtotalItems">
+                            <h6 class="confirmationAcept">É exatamente o que pedi</h6>
+                            <h6 class="confirmationRecused">Não foi o que pedi</h6>
+                        </label>
+                    </div>
+                </div>
+                <div class="endTableItems">
+                    <button>Fechar conta</button>
+                    <button>Adicionar pagamento</button>
+                </div>
+            </footer>
+        </section>
+
+
+    </main>
+
+
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const menuLateral = document.getElementById('menu-lateral');
+
+        btnMenu.addEventListener('click', () => {
+            menuLateral.classList.toggle('menuLateralAtivo');
+        });
+
+    </script>
+
+</body>
+
+</html>
