@@ -38,14 +38,16 @@
         </nav>
         <div style="margin-top: 15px; background-color: black; height: 1px; width: 55px; justify-self: center;"></div>
         <nav class="menuLateralItensSecundarios">
-            <a href="REDIRECIONAMENTOS/Delivery/Delivery.html" class="btnMenu"><i style="font-size: 18px;" class="bi bi-car-front-fill"></i>
+            <a href="REDIRECIONAMENTOS/Delivery/Delivery.html" class="btnMenu"><i style="font-size: 18px;"
+                    class="bi bi-car-front-fill"></i>
                 <p>Delivery</p>
             </a>
             <a href="REDIRECIONAMENTOS/Login/Login.html" class="btnMenu"><i style="font-size: 18px;"
                     class="bi bi-person-circle"></i>
                 <p>Login</p>
             </a>
-            <a href="REDIRECIONAMENTOS/Cadastro/Cadastro.html" class="btnMenu"><i style="font-size: 18px;" class="bi bi-person-vcard"></i>
+            <a href="REDIRECIONAMENTOS/Cadastro/Cadastro.html" class="btnMenu"><i style="font-size: 18px;"
+                    class="bi bi-person-vcard"></i>
                 <p>Cadastro</p>
             </a>
             <button class="btnMenu"><i style="font-size: 19px;" class="bi bi-box-arrow-right"></i>
@@ -68,7 +70,8 @@
             <button id="btnVerMais" class="btnMenu"><i style="font-size: 15px;" class="bi bi-columns-gap"></i>
                 <p>Ver mais</p>
             </button>
-            <a href="REDIRECIONAMENTOS/Suporte/Suporte.html" class="btnMenu"><i style="font-size: 20px;" class="bi bi-question-circle"></i>
+            <a href="REDIRECIONAMENTOS/Suporte/Suporte.html" class="btnMenu"><i style="font-size: 20px;"
+                    class="bi bi-question-circle"></i>
                 <p>Suporte</p>
             </a>
         </nav>
@@ -127,119 +130,152 @@
 
         <div class="menudeEscolha">
             <div class="menuDiario">
-                <span class="card">
-                    <span class="cardImage"><i class="bi bi-ticket-perforated"></i></span>
+                <span class="card" onclick="showCategory('promo')"><span class="cardImage"><i
+                            class="bi bi-ticket-perforated"></i></span>
                     <h2 class="nome">Promoções</h2>
                 </span>
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/mais.jpg" alt=""></span>
+                <span class="card" onclick="showCategory('top')"><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/mais.jpg" alt=""></span>
                     <h2 class="nome">Mais pedidos</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cafe.jpg" alt=""></span>
+                <span class="card" onclick="showCategory('coffee')"><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cafe.jpg" alt=""></span>
                     <h2 class="nome">Cafés</h2>
                 </span>
-                <span class="card">
+                <span onclick="showCategory('snack')" class="card">
                     <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/lanche.jpg" alt=""></span>
                     <h2 class="nome">Lanches</h2>
                 </span>
-                <span class="card">
+                <span onclick="showCategory('breakfast')" class="card">
                     <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/caféDaManhã.png"
                             alt=""></span>
                     <h2 class="nome">Cafés da manhã</h2>
                 </span>
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/Refeição.png" alt=""></span>
+                <span class="card" onclick="showCategory('dinner')"><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/Refeição.png" alt=""></span>
                     <h2 class="nome">Refeições</h2>
                 </span>
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/sobremesas.png"
-                            alt=""></span>
+                <span class="card" onclick="showCategory('dessert')"><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/sobremesas.png" alt=""></span>
                     <h2 class="nome">Sobremesas</h2>
                 </span>
-                <span class="card">
-                    <span class="cardImage"><i class="bi bi-star-fill"></i></span>
+                <span class="card" onclick="showCategory('special')"><span class="cardImage"><i
+                            class="bi bi-star-fill"></i></span>
                     <h2 class="nome">Especias</h2>
                 </span>
             </div>
+
+
             <div class="menuComidas">
-                <span class="card">
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div>
                     <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/frappé.avif" alt=""></span>
                     <h2 class="nome">𝐹𝓇𝒶𝓅𝓅𝑒</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cafecarioca.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cafecarioca.jpg" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝒞𝒶𝓇𝒾𝑜𝒸𝒶</h2>
                 </span>
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cafecomleite.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cafecomleite.jpg" alt=""></span>
                     <h2 class="nome">c𝒶𝒻𝑒-𝒸𝑜𝓂-l𝑒𝒾𝓉𝑒</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cafegelado.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cafegelado.jpg" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝑔𝑒𝓁𝒶𝒹𝑜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cafepreto.webp" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cafepreto.webp" alt=""></span>
                     <h2 class="nome">𝒸𝒶𝒻𝑒-𝓅𝓇𝑒𝓉𝑜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/capuccino.png" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div><span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/capuccino.png" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝓅𝓊𝒸𝒸𝒾𝓃𝑜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/espressp.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/espressp.jpg" alt=""></span>
                     <h2 class="nome">𝐸𝓈𝓅𝓇𝑒𝓈𝓈𝑜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/mocha.avif" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/mocha.avif" alt=""></span>
                     <h2 class="nome">𝑀𝑜𝒸𝒽𝒶</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/dalgona.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/dalgona.jpg" alt=""></span>
                     <h2 class="nome">c𝒶𝒻𝑒-𝒹𝒶𝓁𝑔𝑜𝓃𝒶</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/macchiato.webp" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/macchiato.webp" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝑀𝒶𝒸𝒸𝒽𝒾𝒶</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/mead.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/mead.jpg" alt=""></span>
                     <h2 class="nome"> 𝒞𝒶𝒻-𝑀𝑒𝒶𝒹</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/penna.png" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/penna.png" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝒫𝑒𝓃𝓃𝒶</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/latte.avif" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/latte.avif" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝐿𝒶𝓉𝓉𝑒</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cortado.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cortado.jpg" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝒞𝑜𝓇𝓉𝒶𝒹𝑜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/americano.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/americano.jpg" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝐸.𝒰.𝒜</h2>
                 </span>
 
-                <span class="card">
-                    <span class="cardImage"><img src="assets/Css/cssDependences/cardImages/cold.jpg" alt=""></span>
+                <span
+                    class="card card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <div class="cardOverlay"></div> <span class="cardImage"><img
+                            src="assets/Css/cssDependences/cardImages/cold.jpg" alt=""></span>
                     <h2 class="nome">𝒞𝒶𝒻𝑒-𝒞𝑜𝓁𝒹</h2>
                 </span>
             </div>
@@ -710,6 +746,30 @@
             toggle.classList.toggle('toggle-on');
         });
 
+
+        function showCategory(category) {
+            const products = [...document.querySelectorAll('.menuComidas > .card')];
+            const categoryIndexes = {
+                promo: [0, 5, 7], top: [0, 1, 2, 5],
+                coffee: products.map((_, index) => index), snack: [0, 7, 10, 11],
+                breakfast: [1, 2, 5, 12], dinner: [10, 11],
+                dessert: [0, 7], special: [5, 7, 9, 12]
+            };
+            const visibleIndexes = new Set(categoryIndexes[category] || []);
+            products.forEach((product, index) => {
+                product.style.display = visibleIndexes.has(index) ? '' : 'none';
+                const oldBadge = product.querySelector('.promoBadge');
+                if (oldBadge) oldBadge.remove();
+                if (category === 'promo' && visibleIndexes.has(index)) {
+                    const badge = document.createElement('span');
+                    badge.className = 'promoBadge';
+                    badge.textContent = 'Promoção';
+                    badge.style.cssText = 'position:absolute;z-index:1;background:#d92323;color:white;padding:6px 10px;border-radius:8px;margin:8px;font-weight:bold';
+                    product.style.position = 'relative';
+                    product.appendChild(badge);
+                }
+            });
+        }
     </script>
 
 </body>
