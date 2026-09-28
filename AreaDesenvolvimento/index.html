@@ -32,8 +32,7 @@
 
     <section id="menu-lateral" class="menuLateral">
         <nav class="menuLateralItensPrimarios">
-            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;"
-                    class="bi bi-list"></i></button>
+            <button id="btn-menu" class="btnMenu"><i style="font-size: 30px;" class="bi bi-list"></i></button>
             <button><img style="margin-top: 2px; height: 50px;" src="assets/Css/ImagesCss/PageLogo1.png"
                     alt=""></button>
         </nav>
@@ -125,11 +124,11 @@
                     <span class="cardImage"></span>
                     <h2 class="nome">Cafés</h2>
                 </span>
-                <span class="card">
+                <span onclick="showLanches()" class="card">
                     <span class="cardImage"></span>
                     <h2 class="nome">Lanches</h2>
                 </span>
-                <span class="card">
+                <span onclick="showBrakefast()" class="card">
                     <span class="cardImage"></span>
                     <h2 class="nome">Cafés da manhã</h2>
                 </span>
@@ -150,68 +149,72 @@
                 </span>
             </div>
             <div class="menuComidas">
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
-                <span class="card">
+                <span class="card cardLanches cardBrakefast cardSobremesas cardPromo cardCoffe cardDinner cardTop cardEspecials">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
+                    <span class=""></span>
+                </span>
+
+                <span class="card cardLanches cardBrakefast">
                     <span class="">
-                        <marquee behavior="alternate" direction="down" style="height: 100%; width: 100%;">
-                            <marquee behavior="alternate" style="width: 150px;">CVD</marquee>
-                        </marquee>
+                        <p>asd
+                        </p>
                     </span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
+                <span class="card cardLanches cardBrakefast">
                     <span class=""></span>
                 </span>
 
-                <span class="card">
-                    <span class=""></span>
-                </span>
-
-                <span class="card">
-                    <span class=""></span>
-                </span>
-
-                <span class="card">
-                    <span class=""></span>
-                </span>
-
-                <span class="card">
-                    <span class=""></span>
-                </span>
-
-                <span class="card">
-                    <span class=""></span>
-                </span>
             </div>
         </div>
 
@@ -665,6 +668,28 @@
         btnMenu.addEventListener('click', () => {
             menuLateral.classList.toggle('menuLateralAtivo');
         });
+
+
+
+
+
+
+        function showLanches() {
+            let cardLanches = document.getElementsByClassName('cardLanches');
+
+            // Transforma a coleção em uma lista e percorre cada card
+            for (let card of cardLanches) {
+                card.classList.toggle('showLanches');
+            }
+        }
+
+        function showBrakefast() {
+            let cardBrakefast = document.getElementsByClassName('cardBrakefast');
+
+            for (let card of cardBrakefast) {
+                card.classList.toggle('showBrakefast')
+            }
+        }
 
     </script>
 

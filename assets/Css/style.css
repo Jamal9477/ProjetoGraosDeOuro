@@ -1,5 +1,8 @@
-:root{
+    :root{
+    --primaryBg-Color: ;
+    --primary-Bg-Container-Color: #46598d;
     --primaryBorder-Color: #b4b2b2;
+    --primaryText-Color: ;
 }
 * {
     top: 0;
@@ -17,14 +20,14 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
 }
 
 .menuLateral {
     top: 5px;
     left: -230px;
     border-radius: 10px;
-    background-color: rgb(70, 89, 141);
+    background-color: var(--primary-Bg-Container-Color);
     border: 1px solid var(--primaryBorder-Color);
     z-index: 1;
     height: 98.8vh;
@@ -47,7 +50,7 @@ body {
     position: absolute;
     z-index: -1;
     top: 200px;
-    background-color: rgb(70, 89, 141);
+    background-color: var(--primary-Bg-Container-Color);
     height: 200px;
     width: 90px;
     transition: 1s;
@@ -159,7 +162,7 @@ body {
 }
 
 .btnMenu:hover i {
-    color: rgb(0, 82, 107);
+    color: #00526b;
     border-radius: 2.5px;
     transition: 0.2s;
 }
@@ -239,7 +242,7 @@ body {
     display: flex;
     position: absolute;
     justify-content: space-between;
-    background-color: rgb(70, 89, 141);
+    background-color: var(--primary-Bg-Container-Color);
     width: 1799px;
     z-index: 0;
     height: 53px;
@@ -1008,4 +1011,40 @@ span {
     width: 150px;
     height: 50px;
     top: 1.5px;
+}
+.showLanches{
+    background-color: blue;
+}
+.showBrakefast{
+    background-color: red;
+}
+.card{
+    overflow: hidden;
+}
+.cardOverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 158, 158, 0);
+    position: absolute;
+    z-index: 2;
+}
+.cardOverlay::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(185, 185, 185, 0.295);
+    width: 50px;
+    rotate: 30deg;
+    height: 400px;
+    animation: vidro 5s ease-in-out infinite;
+}
+@keyframes vidro{
+    0%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(-190px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
 }

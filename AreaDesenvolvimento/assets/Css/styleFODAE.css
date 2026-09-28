@@ -964,3 +964,14 @@ span {
     display: flex;
     flex-direction: column;
 }
+.showLanches{
+    background-color: blue;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+.showBrakefast{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
