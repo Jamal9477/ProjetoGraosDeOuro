@@ -425,6 +425,7 @@ h4 {
     display: flex;
     flex-direction: column;
     position: relative;
+    border: 1px solid var(--primaryBorder-Color);
     background-color: rgba(0, 132, 255, 0.281);
     border-radius: 10px;
     height: 820px;
@@ -438,7 +439,8 @@ h4 {
 }
 
 .linhadePesquisa {
-    background-color: pink;
+    border: 1px solid var(--primaryBorder-Color);
+    background-color: rgb(127, 127, 255);
     position: relative;
     display: grid;
     grid-template-columns: 599px 599px 599px;
@@ -517,7 +519,7 @@ h4 {
 }
 
 .menuDiario {
-    background-color: rgb(255, 224, 224);
+    background-color: rgba(255, 224, 224, 0.089);
     justify-content: space-evenly;
     display: flex;
     position: absolute;
@@ -531,6 +533,9 @@ h4 {
 .menuDiario .card {
     height: 167px;
 }
+.menuDiario .card:hover{
+    box-shadow: 5px 4px 15px 0px;
+}
 
 
 .bi-star-fill{
@@ -543,17 +548,18 @@ h4 {
 .cardImage {
     top: 0;
     margin-top: 0;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     position: relative;
     justify-self: center;
     height: 84%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.295);
     width: 100%;
     overflow: hidden;
 }
 
 .cardImage img {
-    position: relative;
+    border-radius: 8px 8px 0px 0px;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -644,7 +650,7 @@ h4 {
 }
 
 .card {
-    background-color: rgb(255, 255, 255);
+    background-color: #D9D9D9;
     margin-top: 12px;
     border-radius: 10px;
     width: 170px;
@@ -660,7 +666,7 @@ h4 {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    scale: 1.1;
     transition: 0.5s;
 }
 
@@ -1050,4 +1056,32 @@ span {
     overflow: hidden;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     gap: 15px;
+}
+.menuComidas{
+    display: grid;
+    gap: 20px;
+    overflow: hidden;
+    height: 725px;
+}
+.name{
+    width: 100%;
+    height: 17%;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0px 0px 9px 9px;
+}
+.nome{
+    font-family: 'Extra light';
+}
+.cardPromo,
+.cardTop,
+.cardCoffe,
+.cardLanches,
+.cardBrakeFest,
+.cardDinner,
+.cardSobremesas,
+.cardEspecials{
+    overflow: hidden;
+}
+.CARDSobremesas .name{
+    background-color: white;
 }
