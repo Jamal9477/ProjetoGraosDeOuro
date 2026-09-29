@@ -557,18 +557,15 @@ h4 {
     width: 100%;
     height: 100%;
 }
-
-.menuComidas .card .nome{
+.CARDcoffe .card .nome{
     position: relative;
     justify-self: center;
     font-size: 1.5em;
 }
-
-.menuComidas .card{
+.CARDcoffe .card{
     width: 180px;
 }
-
-.menuComidas .cardImage{
+.CARDcoffe  .cardImage{
     height: 300px;
 }
 
@@ -631,7 +628,7 @@ h4 {
     }
 }
 
-.menuComidas {
+.CARDcoffe{
     background-color: rgb(255, 102, 0);
     position: relative;
     height: 480px;
@@ -1012,21 +1009,13 @@ span {
     height: 50px;
     top: 1.5px;
 }
-.showLanches{
-    background-color: blue;
-}
-.showBrakefast{
-    background-color: red;
-}
-.card{
-    overflow: hidden;
-}
 .cardOverlay{
     width: 100%;
     height: 100%;
     background-color: rgba(158, 158, 158, 0);
     position: absolute;
     z-index: 2;
+    overflow: hidden;
 }
 .cardOverlay::before{
     content: "";
@@ -1047,4 +1036,18 @@ span {
     100%{
         transform: translateX(50px);
     }
+}
+.cardapio{
+    background-color: rgb(255, 102, 0);
+    position: relative;
+    height: 480px;
+    width: 1765px;
+    left: 15px;
+    top: 230px;
+    border-radius: 10px;
+    justify-content: space-around;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 15px;
 }
