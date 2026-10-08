@@ -31,7 +31,6 @@ body {
     border: 1px solid var(--primaryBorder-Color);
     z-index: 1;
     height: 98.8vh;
-    
     justify-content: right;
     display: grid;
     grid-template-columns: 70px;
@@ -73,6 +72,7 @@ body {
 
 .menuLateralItensPrimarios {
     position: relative;
+    height: 60px;
 }
 
 .menuLateralItensPrimarios button {
@@ -81,6 +81,11 @@ body {
     border: none;
     color: black;
     background-color: transparent;
+}
+.btnMenu p{
+    color: black;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .btnMenu {
@@ -106,15 +111,6 @@ body {
     position: absolute;
 }
 
-.btnMenu p {
-    font-size: 13.4px;
-    top: 50%;
-    left: 8px;
-    position: absolute;
-    transition: 0.3s;
-
-}
-
 .btnMenu:before {
     content: "";
     position: absolute;
@@ -134,9 +130,7 @@ body {
     --color: transparent;
     background-color: transparent;
     background: transparent;
-
 }
-
 .btnMenu:before {
     top: 100%;
     left: 100%;
@@ -175,10 +169,11 @@ body {
 }
 .menuLateralItensSecundarios {
     top: 55px;
-    gap: 10px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
     width: 70px;
+    height: 600px;
     position: relative;
 }
 
@@ -197,20 +192,12 @@ body {
     color: black;
 }
 
-.menuLateralItensSecundarios button p {
-    text-shadow: 1px 0px 0px;
-    color: rgb(14, 41, 44);
-    position: absolute;
-    top: 29px;
-    left: 15%;
-}
-
 .menuLateralItensTerciarios {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    height: 125px;
+    gap: 15px;
+    height: 150px;
     width: 70px;
     background-color: transparent
 }
@@ -230,12 +217,13 @@ body {
     color: black;
 }
 
-.menuLateralItensTerciarios button p {
-    text-shadow: 1px 0px 0px;
-    color: rgb(14, 41, 44);
-    position: absolute;
-    top: 29px;
-    left: 15%;
+.menuLateralVerMais button{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
 }
 
 .standart {
@@ -1117,12 +1105,28 @@ span {
     grid-template-columns: 250px;
     transition: 1s;
 }
-
+.menuLateral.menuLateralAtivo .btnMenu{
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    border-radius: 5px;
+}
 /* Aberto: mostra os nomes dos itens */
 .menuLateral.menuLateralAtivo .btnMenu p {
     display: block;
     position: absolute;
     transition: 1s;
+    text-shadow: 1px 0px 0px;
+    animation: smoth 1s ease-in;
+}
+@keyframes smoth{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.menuLateral.menuLateralAtivo .btnMenu p{
+    opacity: 1;
 }
 
 /* Aberto: os menus internos deixam de ficar limitados aos 70px */
@@ -1131,7 +1135,17 @@ span {
     width: 250px;
     transition: 1s;
 }
-
+.menuLateral .menuLateralVerMais .tt p{
+   position: absolute;
+   color: black;
+   margin-top: -15px;
+}
+.menuLateral .menuLateralVerMais .tt{
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    overflow: hidden;
+    border-radius: 5px;
+}
 /* Os botÃµes secundÃ¡rios acompanham a largura do menu aberto */
 .menuLateral.menuLateralAtivo .menuLateralItensSecundarios button,
 .menuLateral.menuLateralAtivo .menuLateralItensSecundarios a,
@@ -1205,7 +1219,7 @@ span {
     height: auto;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 15px;
     background-color: transparent;
     transition: none;
 }
@@ -1219,6 +1233,7 @@ span {
 
 /* Textos de Ver mais seguem o mesmo padrÃ£o dos outros */
 .menuLateral.menuLateralAtivo #menuVerMais .btnMenu p {
+    opacity: 1;
     display: block;
     left: 50%;
     transform: translateX(-50%);
