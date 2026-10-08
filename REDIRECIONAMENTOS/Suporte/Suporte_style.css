@@ -17,14 +17,66 @@ body {
     overflow: hidden;
     background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
 }
+
+.barraMenu{
+  background-color: gray;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 90px;
+  top: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.bi-house{
+  position: absolute;
+  font-size: 35px;
+  left: 10px;
+  top: 5px;
+  color: black;
+}
+
+.bi-car-front-fill{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 82%;
+  color: black;
+}
+
+.bi-person-vcard{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 86%;
+  color: black;
+}
+
+.bi-geo-alt-fill{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 90%;
+  color: black;
+}
+
+.bi-chat-dots{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 94%;
+  color: black;
+}
+
 .conteudo{
     position: relative;
-    top: 120px;
+    top: 50px;
     display: flex;
     gap: 30px;
     background-color: red;
     width: 100%;
-    height: 80%;
+    height: 82%;
     justify-self: center;
 }
 .conteudoDescription{
@@ -38,6 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    top: 30px;
 }   
 .conteudoDescriptionWelcome{
     position: relative;
@@ -103,7 +156,7 @@ body {
 }
 .conteudoSuportButtons{
     background-color: aqua;
-    height: 20%;
+    height: 25%;
     width: 100%;
     border-radius: 20px;
 }
