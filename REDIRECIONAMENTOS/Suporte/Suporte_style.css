@@ -15,29 +15,83 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
 }
+
+.barraMenu{
+  background-color: rgb(31, 73, 128);
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 90px;
+  top: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.bi-house{
+  position: absolute;
+  font-size: 35px;
+  left: 10px;
+  top: 5px;
+  color: black;
+}
+
+.bi-car-front-fill{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 82%;
+  color: black;
+}
+
+.bi-person-vcard{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 86%;
+  color: black;
+}
+
+.bi-geo-alt-fill{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 90%;
+  color: black;
+}
+
+.bi-chat-dots{
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 94%;
+  color: black;
+}
+
 .conteudo{
     position: relative;
-    top: 120px;
+    top: 50px;
     display: flex;
     gap: 30px;
     background-color: red;
     width: 100%;
-    height: 80%;
+    height: 82%;
     justify-self: center;
 }
 .conteudoDescription{
     z-index: 0;
-    background-color: blue;
+    background-color: rgb(0, 26, 255);
     height: 93%;
     position: relative;
     width: 33%;
     margin-left: 30px;
     border-radius: 20px;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    top: 30px;
 }   
 .conteudoDescriptionWelcome{
     position: relative;
@@ -96,6 +150,7 @@ body {
     height: 70%;
     width: 100%;
     border-radius: 20px;
+    border: 1px solid white;
     display: grid;
     grid-template-columns: 650px 500px;
     grid-template-rows: 70%;
@@ -103,7 +158,7 @@ body {
 }
 .conteudoSuportButtons{
     background-color: aqua;
-    height: 20%;
+    height: 25%;
     width: 100%;
     border-radius: 20px;
 }
