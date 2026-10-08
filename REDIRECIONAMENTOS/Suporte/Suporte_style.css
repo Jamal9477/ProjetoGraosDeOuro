@@ -15,11 +15,11 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to top left, rgb(69, 69, 236), rgb(32, 18, 66));
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
 }
 
 .barraMenu{
-  background-color: gray;
+  background-color: rgb(31, 73, 128);
   width: 90%;
   height: 50px;
   position: relative;
@@ -81,12 +81,13 @@ body {
 }
 .conteudoDescription{
     z-index: 0;
-    background-color: blue;
+    background-color: rgb(0, 26, 255);
     height: 93%;
     position: relative;
     width: 33%;
     margin-left: 30px;
     border-radius: 20px;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -149,6 +150,7 @@ body {
     height: 70%;
     width: 100%;
     border-radius: 20px;
+    border: 1px solid white;
     display: grid;
     grid-template-columns: 650px 500px;
     grid-template-rows: 70%;
