@@ -15,7 +15,8 @@
         <div class="barraMenu">
             <a href=""><i class="bi bi-house"></i></a>
             <h3 class="animate__animated animate__jackInTheBox"
-            style="position: relative; top: 7px; left: 42%; font-size: 30px; font-style: italic;">Cafeteria Grãos de ouro</h3>
+                style="position: relative; top: 7px; left: 42%; font-size: 30px; font-style: italic;">Cafeteria Grãos de
+                ouro</h3>
             <a href=""><i class="bi bi-car-front-fill"></i></a>
             <a href=""><i class="bi bi-person-vcard"></i></a>
             <a href=""><i class="bi bi-geo-alt-fill"></i></a>
@@ -35,17 +36,21 @@
             <div class="conteudoDescriptionHelp1">
                 <p>
                     Este site é para que você, usuario de nossa plataforma, consiga solicitar ajuda com qualquer
-                    problema presente em nosso site ou em um de seus pedidos. 
+                    problema presente em nosso site ou em um de seus pedidos.
                     <br> <br>
                     O nosso site é feito sobre medida e nossos funcionarios são treinados para atender todos os seus
-                    pedidos e resolver quaiquer problemas que surgirem. 
+                    pedidos e resolver quaiquer problemas que surgirem.
                     <br> <br>
                     Nossa equipe está apostos 24Horas para garantir melhor atendimento e experiencia de usuario
                     possivel.
                     <br> <br>
-                    Por motivos de eficiência e velocidade no atendimento, pedimos a gentileza de registrar o máximo de detalhes possível sobre a sua solicitação. Dessa forma, nossa equipe conseguirá analisar o seu caso com precisão e fornecer um retorno muito mais rápido.
+                    Por motivos de eficiência e velocidade no atendimento, pedimos a gentileza de registrar o máximo de
+                    detalhes possível sobre a sua solicitação. Dessa forma, nossa equipe conseguirá analisar o seu caso
+                    com precisão e fornecer um retorno muito mais rápido.
                     <br> <br>
-                    Visando garantir a máxima clareza e um fácil entendimento do seu processo, solicitamos que, caso seja aplicável, você renomeie os arquivos e adicione descrições detalhadas a cada um dos seus anexos. Essa prática evita ambiguidades e agiliza a análise da sua documentação.
+                    Visando garantir a máxima clareza e um fácil entendimento do seu processo, solicitamos que, caso
+                    seja aplicável, você renomeie os arquivos e adicione descrições detalhadas a cada um dos seus
+                    anexos. Essa prática evita ambiguidades e agiliza a análise da sua documentação.
                     <br> <br>
 
                 </p>
@@ -57,29 +62,44 @@
 
             <section class="conteudoSuportFormulario">
                 <div class="conteudoContainer1">
-                    <div>
-                        <div style="display: flex; gap: 2px;">
+
+
+                    <div class="questionContent" style="margin-top: 10px;">
+                        <div class="titleQuestion" style="display: flex; gap: 2px;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite sua reclamação:</h5>
                         </div>
-                        <input class="textoReclamacao" type="text" placeholder="texto...">
+                        <input class="textoReclamacao setHelp" type="text" placeholder="texto...">
                     </div>
-                    <div style="background-color: re; margin-top: 10px;">
-                        <div style="display: flex;">
+
+
+
+
+
+                    <div class="questionContent" style="margin-top: 10px;">
+                        <div id="inputTitle" class="titleQuestion" style="display: flex;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Id do pedido(caso aplicavel):</h5>
                         </div>
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
-                            type="text">
+                        <input id="setHelpInput" class="setHelp" type="text">
                     </div>
-                    <div>
-                        <div style="display: flex; margin-top: 20px;">
+
+
+
+
+
+
+                    <div class="questionContent" style="margin-top: 10px;">
+                        <div class="titleQuestion" style="display: flex; margin-top: 20px;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite seu email:</h5>
                         </div>
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
-                            type="email" name="" id="">
+                        <input class="setHelp" type="email" name="" id="">
                     </div>
+
+
+
+
                     <div style="display: flex; gap: 10px;margin-top: 20px;">
                         <div style="display: flex;">
                             <div class="container">
@@ -139,15 +159,40 @@
     </main>
 
 
-<script>
+    <script>
 
-    //window.onload = function() {
-    //let userName = prompt('Digite seu nome:');
-    //let showUserName = document.getElementById('showUserName');
-    //showUserName.innerHTML = userName
-};
+        const input = document.getElementById('setHelpInput');
+        const div = document.getElementById('inputTitle');
 
-</script>
+        const products = [...document.querySelectorAll('.menuComidas > .cardapio')];
+            const categoryIndexes = {
+          coffee: [0],
+          promo: [1],
+          top: [2],
+          snack: [3],
+          breakfast: [4],
+          dinner: [5],
+          dessert: [6],
+          special: [7]
+        };
+
+        // Evento disparado enquanto o usuário digita
+        input.addEventListener('input', () => {
+            if (input.value.trim() !== '') {
+                div.classList.add('subir'); // Sobe se tiver texto
+            } else {
+                div.classList.remove('subir'); // Volta se estiver vazio
+            }
+        });
+
+
+        //   window.onload = function() {
+        //   let userName = prompt('Digite seu nome:');
+        //   let showUserName = document.getElementById('showUserName');
+        //   showUserName.innerHTML = userName
+        //};
+
+    </script>
 
 </body>
 
