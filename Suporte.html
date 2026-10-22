@@ -13,7 +13,7 @@
 
     <header class="standart">
         <div class="barraMenu">
-            <a href=""><i class="bi bi-house"></i></a>
+            <a href="index.html"><i class="bi bi-house"></i></a>
             <h3 class="animate__animated animate__jackInTheBox"
                 style="position: relative; top: 7px; left: 42%; font-size: 30px; font-style: italic;">Cafeteria Grãos de
                 ouro</h3>
@@ -36,8 +36,8 @@
             <div class="conteudoDescriptionHelp1">
                 <p>
                     Este site é para que você, usuario de nossa plataforma, consiga solicitar ajuda com qualquer
-                    problema presente em nosso site ou em um de seus pedidos. 
-                    <br> <br> 
+                    problema presente em nosso site ou em um de seus pedidos.
+                    <br> <br>
                     O nosso site é feito sobre medida e nossos funcionarios são treinados para atender todos os seus
                     pedidos e resolver quaiquer problemas que surgirem.
                     <br> <br>
@@ -69,7 +69,7 @@
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite sua reclamação:</h5>
                         </div>
-                        <input class="textoReclamacao setHelp" type="text" placeholder="texto...">
+                        <input class="textoReclamacao" type="text" placeholder="texto...">
                     </div>
 
 
@@ -83,41 +83,40 @@
                         </div>
                         <input id="setHelpInput" class="setHelp" type="text">
                     </div>
-<<<<<<< HEAD
 
 
+                <div style="display: flex; gap: 10px;margin-top: 20px;">
 
 
+                    <div class="container">
+                        <details class="menu-retratil">
+                            <summary id="menuReembolso" class="botao-recomendar">
+                                Escolha o Motivo do Reembolso
+                                <span class="seta">▼</span>
+                            </summary>
+
+                            <div class="conteudo-opcoes">
+                                <button id="priorityLow" class="item-opcao">Tolerável</button>
+                                <button id="priorityMedium" class="item-opcao">Importante</button>
+                                <button id="priorityHigh" class="item-opcao">Imediato</button>
+                            </div>
+                        </details>
+                    </div>
 
 
-                    <div class="questionContent" style="margin-top: 10px;">
-                        <div class="titleQuestion" style="display: flex; margin-top: 20px;">
-=======
-                    <div>
-                        <div style="display: flex; margin-top: 20px; margin-left: 50%;">
+                    <div class="questionContent">
+                        <div class="titleQuestion" style="display: flex;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Oultros...</h5>
                         </div>
-                        <input style="border-radius: 20px; border: 1px solid black; width: 300px; height: 40px; margin-left: 50%;" type="text">
-                        <div>
-                            <div class="container">
-                                <details class="menu-retratil">
-                                    <summary id="menuReembolso" class="botao-recomendar">
-                                        Escolha o Motivo do Reembolso
-                                        <span class="seta">▼</span>
-                                    </summary>
-                                
-                                    <div class="conteudo-opcoes">
-                                        <button id="priorityLow" class="item-opcao">Tolerável</button>
-                                        <button id="priorityMedium" class="item-opcao">Importante</button>
-                                        <button id="priorityHigh" class="item-opcao">Imediato</button>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
+                        <input style="width: 280px;" class="setHelp" type="text">
+                    </div>
 
-                        <div style="display: flex; margin-top: -30px;">
->>>>>>> 8ceefd8517fa8b801a7cc573e6ed6c3ad9326535
+
+                </div>
+
+                    <div class="questionContent">
+                        <div class="titleQuestion" style="display: flex;">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite seu email:</h5>
                         </div>
@@ -127,59 +126,65 @@
 
 
 
-                    <div style="display: flex; gap: 10px;margin-top: 20px;">
-                        <div style="display: flex;">
-                            <div class="container">
-                                <details class="menu-retratil">
-                                    <summary class="botao-recomendar">
-                                        Estime sua prioridade
-                                        <span class="seta">▼</span>
-                                    </summary>
+                <div style="display: flex; gap: 10px; margin-top: 20px;">
 
-                                    <div class="conteudo-opcoes">
-                                        <button id="priorityLow" class="item-opcao">Tolerável</button>
-                                        <button id="priorityMedium" class="item-opcao">Importante</button>
-                                        <button id="priorityHigh" class="item-opcao">Imediato</button>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
-                        <div style="display: flex;">
-                            <div class="container">
-                                <details class="menu-retratil">
-                                    <summary class="botao-recomendar">
-                                        Problema
-                                        <span class="seta">▼</span>
-                                    </summary>
-                                    <div class="conteudo-opcoes">
-                                        <button id="" class="item-opcao">Problemas de UI</button>
-                                        <button id="" class="item-opcao">Problemas no site</button>
-                                        <button id="" class="item-opcao">Problemas</button>
-                                        <button id="" class="item-opcao">Problemas na entrega</button>
-                                        <button id="" class="item-opcao">Pedido incorreto</button>
-                                    </div>
-                                </details>
-                            </div>
+
+                    <div style="display: flex;">
+                        <div class="container">
+                            <details class="menu-retratil">
+                                <summary class="botao-recomendar">
+                                    Estime sua prioridade
+                                    <span class="seta">▼</span>
+                                </summary>
+
+                                <div class="conteudo-opcoes">
+                                    <button id="priorityLow" class="item-opcao">Tolerável</button>
+                                    <button id="priorityMedium" class="item-opcao">Importante</button>
+                                    <button id="priorityHigh" class="item-opcao">Imediato</button>
+                                </div>
+                            </details>
                         </div>
                     </div>
-                </div>
-                <div class="conteudoContainer2">
-                    <div class="showAnexo"></div>
-                    <div style="display: flex; margin-top: 20px; gap: 15px; justify-self: center;">
-                        <button class="btn1">Anexar imagem</button>
-                        <button class="btn1">Anexar arquivo</button>
+
+                    
+                    <div style="display: flex;">
+                        <div class="container">
+                            <details class="menu-retratil">
+                                <summary class="botao-recomendar">
+                                    Problema
+                                    <span class="seta">▼</span>
+                                </summary>
+                                <div class="conteudo-opcoes">
+                                    <button id="" class="item-opcao">Problemas de UI</button>
+                                    <button id="" class="item-opcao">Problemas no site</button>
+                                    <button id="" class="item-opcao">Problemas</button>
+                                    <button id="" class="item-opcao">Problemas na entrega</button>
+                                    <button id="" class="item-opcao">Pedido incorreto</button>
+                                </div>
+                            </details>
+                        </div>
                     </div>
-                </div>
-            </section>
 
 
-            <section class="conteudoSuportButtons">
-                <div>
-                    <button class="btn2">Estimar prioridade</button>
-                    <button class="btn2">Deletar reclamação</button>
-                    <button class="btn2">Enviar reclamação</button>
                 </div>
-            </section>
+        </div>
+        <div class="conteudoContainer2">
+            <div class="showAnexo"></div>
+            <div style="display: flex; margin-top: 20px; gap: 15px; justify-self: center;">
+                <button class="btn1">Anexar imagem</button>
+                <button class="btn1">Anexar arquivo</button>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="conteudoSuportButtons">
+            <div>
+                <button class="btn2">Estimar prioridade</button>
+                <button class="btn2">Deletar reclamação</button>
+                <button class="btn2">Enviar reclamação</button>
+            </div>
+        </section>
 
         </div>
 
@@ -192,15 +197,15 @@
         const div = document.getElementById('inputTitle');
 
         const products = [...document.querySelectorAll('.menuComidas > .cardapio')];
-            const categoryIndexes = {
-          coffee: [0],
-          promo: [1],
-          top: [2],
-          snack: [3],
-          breakfast: [4],
-          dinner: [5],
-          dessert: [6],
-          special: [7]
+        const categoryIndexes = {
+            coffee: [0],
+            promo: [1],
+            top: [2],
+            snack: [3],
+            breakfast: [4],
+            dinner: [5],
+            dessert: [6],
+            special: [7]
         };
 
         // Evento disparado enquanto o usuário digita
