@@ -221,9 +221,19 @@ body {
     position: absolute;
     font-size: 23px;
 }
+
+#icon{
+  top: -55px;
+}
   
   .container {
     width: 300px;
+  }
+
+  .container-Outros{
+    width: 300px;
+    position: relative;
+    top: 90px;
   }
   
   /* Remove a setinha padrão do navegador (Chrome/Safari/Firefox) */
@@ -285,6 +295,10 @@ body {
     
     /* Pequena animação de surgimento */
     animation: deslizar 0.2s ease-out;
+  }
+
+  #conteudo{
+    margin-top: -50px;
   }
   
   /* Estilo de cada opção individual */
