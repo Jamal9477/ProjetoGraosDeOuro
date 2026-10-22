@@ -1,0 +1,90 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+body{
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
+}
+
+.standart{
+    background-color: blueviolet;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+    left: 4%;
+    top: 10px;
+}
+
+.btnHouse{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: black;
+}
+
+.bi-person-vcard{
+    font-size: 25px;
+    position: absolute;
+    left: 80%;
+    top: 10px;
+    color: black;
+} 
+
+.bi-geo-alt-fill{
+    font-size: 25px;
+    position: absolute;
+    left: 85%;
+    top: 10px;
+    color: black;
+} 
+
+.bi-chat-dots{
+    font-size: 25px;
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    color: black;
+}
+
+.menuPrincipal{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.menuLocalizacao{
+    position: relative;
+    background-color: red;
+    height: 80%;
+    width: 30%;
+    left: 150px;
+    top: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.menuEscolha{
+    position: relative;
+    background-color: blue;
+    left: 30%;
+    top: 50px;
+    height: 80%;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 20px;
+}

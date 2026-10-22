@@ -471,6 +471,10 @@ details summary {
     /* Pequena animação de surgimento */
     animation: deslizar 0.2s ease-out;
   }
+
+  #conteudo{
+    margin-top: -50px;
+  }
   
   /* Estilo de cada opção individual */
   .item-opcao {
