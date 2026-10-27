@@ -1,23 +1,24 @@
+
 * {
-  top: 0;
-  left: 0;
-  margin: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 body {
-  top: 0;
-  left: 0;
-  margin: 0;
-  height: 110vh;
-  background-repeat: no-repeat;
-  z-index: 0;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
 }
 
-.barraMenu {
+.barraMenu{
   background-color: rgb(31, 73, 128);
   width: 90%;
   height: 50px;
@@ -28,7 +29,7 @@ body {
   border: 1px solid white;
 }
 
-.bi-house {
+.bi-house{
   position: absolute;
   font-size: 35px;
   left: 10px;
@@ -36,7 +37,7 @@ body {
   color: black;
 }
 
-.bi-car-front-fill {
+.bi-car-front-fill{
   position: absolute;
   font-size: 35px;
   top: 10px;
@@ -44,7 +45,7 @@ body {
   color: black;
 }
 
-.bi-person-vcard {
+.bi-person-vcard{
   position: absolute;
   font-size: 35px;
   top: 10px;
@@ -52,7 +53,7 @@ body {
   color: black;
 }
 
-.bi-geo-alt-fill {
+.bi-geo-alt-fill{
   position: absolute;
   font-size: 35px;
   top: 10px;
@@ -60,7 +61,7 @@ body {
   color: black;
 }
 
-.bi-chat-dots {
+.bi-chat-dots{
   position: absolute;
   font-size: 35px;
   top: 10px;
@@ -68,15 +69,15 @@ body {
   color: black;
 }
 
-.conteudo {
-  position: relative;
-  top: 50px;
-  display: flex;
-  gap: 30px;
-  background-color: re;
-  width: 100%;
-  height: 82%;
-  justify-self: center;
+.conteudo{
+    position: relative;
+    top: 50px;
+    display: flex;
+    gap: 30px;
+    background-color: re;
+    width: 100%;
+    height: 82%;
+    justify-self: center;
 }
 .conteudoDescriptionWelcome h4{
   font-size: 30px;
@@ -115,284 +116,129 @@ body {
   text-decoration: underline;
   animation: pulsar 3s ease-in-out infinite;
 }
-
-@keyframes pulsar {
-  0% {
+@keyframes pulsar{
+  0%{
     text-decoration-color: purple;
     font-size: 25px;
   }
-
-  50% {
+  50%{
     text-decoration-color: purple;
     font-size: 26px;
   }
-
-  100% {
+  100%{
     text-decoration-color: purple;
     font-size: 25px;
   }
 }
-
-.conteudoDescriptionHelp1 {
-  position: relative;
-  top: 0;
-  background-color: rgba(0, 128, 0, 0);
-  height: 39rem;
-  width: 600px;
+.conteudoDescriptionHelp1{
+    position: relative;
+    top: 0;
+    background-color: rgba(0, 128, 0, 0);
+    height: 39rem;
+    width: 100%;
 }
-
-.conteudoDescriptionHelp1 p {
-  left: 20px;
-  position: absolute;
-  font-size: 25px;
+.conteudoDescriptionHelp1 p{
+    font-size: 25px;
 }
-
-.conteudoSuport {
-  position: relative;
-  background-color: chartreus;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 66%;
-  margin-right: 30px;
-  margin-bottom: 1px;
+.conteudoSuport{
+    position: relative;
+    background-color: chartreus;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 66%;
+    margin-right: 30px;
+    margin-bottom: 1px;
 }
-
-.conteudoSuportFormulario {
-  background-color: rgba(0, 132, 255, 0.281);
-  height: 70%;
-  width: 100%;
-  border-radius: 20px;
-  border: 1px solid white;
-  display: grid;
-  grid-template-columns: 650px 500px;
-  grid-template-rows: 70%;
-  gap: 20px;
+.conteudoSuportFormulario{
+    background-color: yellow;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 650px 500px;
+    grid-template-rows: 70%;
+    gap: 20px;
 }
-
-.conteudoSuportButtons {
-  background-color: aqua;
-  height: 25%;
-  width: 100%;
-  border-radius: 20px;
+.conteudoSuportButtons{
+    background-color: aqua;
+    height: 25%;
+    width: 100%;
+    border-radius: 20px;
 }
-
-.conteudoContainer1 {
-  display: grid;
-  margin-top: 20px;
-  margin-left: 40px;
+.conteudoContainer1{
+    display: grid;
+    margin-top: 20px;
+    margin-left: 40px;
 
 }
-
-.textoReclamacao {
-  width: 600px;
-  height: 200px;
-  border: none;
-  border-radius: 15px;
-  background-color: rgba(255, 224, 224, 0.089);
-
+.textoReclamacao{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.btn1{
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(38, 38, 211);
+    cursor: pointer;
+}
+.btn2{
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(0, 217, 255);
+    cursor: pointer;
+}
+.showAnexo{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+}
+.info{
+    position: relative;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.info i{
+    left: 2.5px;
+    top: 1.3px;
+    position: absolute;
+    font-size: 23px;
 }
 
-.btn1 {
-  height: 50px;
-  width: 150px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 1px solid black;
-  background-color: rgb(38, 38, 211);
-  cursor: pointer;
+#icon{
+  top: -55px;
 }
-
-.btn2 {
-  height: 50px;
-  width: 150px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 1px solid black;
-  background-color: rgb(0, 217, 255);
-  cursor: pointer;
-}
-
-.showAnexo {
-  margin-top: 20px;
-border: none;
-  border-radius: 20px;
-  width: 500px;
-  height: 400px;
-  background-color: rgba(255, 224, 224, 0.089);
-}
-
-.info {
-  position: relative;
-  margin: 0;
-  width: 30px;
-  height: 30px;
-  display: grid;
-  border-radius: 100%;
-  background-color: transparent;
-  border: 1px solid transparent;
-}
-
-.info i {
-  left: 2.5px;
-  top: 1.3px;
-  position: absolute;
-  font-size: 23px;
-}
-.setHelp {
-  background-color: rgba(255, 224, 224, 0.089);
-  border: none;
-  border-radius: 15px;
-  width: 600px;
-  height: 30px;
-  position: relative;
-  top: 100%;
-}
-.questionContent{
-  display: grid;
-  position: relative;
-  height: 40px;
-}
-.titleQuestion{
-  z-index: -1;
-  position: absolute;
-  top: 100%;
-  transition: 0.3s;
-}
-
-.subir{
-  transform: translateY(-30px);
-}
-
-.container {
-  width: 300px;
-}
-
-/* Remove a setinha padrão do navegador (Chrome/Safari/Firefox) */
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary {
-  list-style: none;
-}
-
-/* Estilização do Botão Principal */
-.botao-recomendar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #00adb5;
-  color: white;
-  padding: 14px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.botao-recomendar:hover {
-  background-color: #008c92;
-}
-
-/* Animação da setinha quando o menu estiver aberto */
-.menu-retratil[open] .seta {
-  transform: rotate(180deg);
-}
-
-.seta {
-  font-size: 0.8rem;
-  transition: transform 0.2s ease;
-}
-
-/* Bloco que desce com as opções */
-.conteudo-opcoes {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-top: none;
-  gap: 5px;
-  position: relative;
-  display: grid;
-  flex-direction: column;
-  border-radius: 0 0 8px 8px;
-  padding: 8px 0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-
-  /* Pequena animação de surgimento */
-  animation: deslizar 0.2s ease-out;
-}
-
-/* Estilo de cada opção individual */
-.item-opcao {
-  justify-self: center;
-  display: block;
-  margin: 0;
-  height: 2.5em;
-  width: 100%;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-#priorityLow {
-  background-color: greenyellow;
-}
-
-#priorityLow:hover {
-  color: #333;
-  background-color: rgb(182, 255, 73);
-}
-
-#priorityLow:active {
-  color: black;
-  background-color: greenyellow;
-}
-
-#priorityMedium {
-  background-color: yellow;
-}
-
-#priorityMedium:hover {
-  color: #333;
-  background-color: rgb(241, 241, 32);
-}
-
-#priorityMedium:active {
-  color: black;
-  background-color: yellow;
-}
-
-#priorityHigh {
-  background-color: red;
-}
-
-#priorityHigh:hover {
-  color: #333;
-  background-color: rgb(255, 33, 33);
-}
-
-#priorityHigh:active {
-  color: black;
-  background-color: red;
-}
-
-/* Keyframes para criar o efeito de descida suave */
-@keyframes deslizar {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
+  
+  .container {
+    width: 300px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .container-Outros{
+    width: 300px;
+    position: relative;
+    top: 90px;
+  }
+  
+  /* Remove a setinha padrão do navegador (Chrome/Safari/Firefox) */
+  details summary::-webkit-details-marker {
+    display: none;
   }
   details summary {
     list-style: none;
