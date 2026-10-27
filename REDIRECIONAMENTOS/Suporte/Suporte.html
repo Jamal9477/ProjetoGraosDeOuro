@@ -62,55 +62,70 @@
 
             <section class="conteudoSuportFormulario">
                 <div class="conteudoContainer1">
-                    <div>
-                        <div style="display: flex; gap: 2px;">
+
+
+                    <div class="questionContainer">
+                        <div class="questionTitle">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite sua reclamação:</h5>
                         </div>
-                        <input class="textoReclamacao" type="text" placeholder="texto...">
+                        <textarea class="textoReclamacao" name="" id="MeuInput"></textarea>
                     </div>
-                    <div style="background-color: re; margin-top: 10px;">
-                        <div style="display: flex;">
+
+
+                    <div class="questionContainer">
+                        <div class="questionTitle">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Id do pedido(caso aplicavel):</h5>
                         </div>
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
-                            type="text">
+                        <input class="setHelp" type="text">
                     </div>
-                    <div>
-                        <div class="container-Outros">
-                            <details class="menu-retratil">
-                                <summary id="menuReembolso" class="botao-recomendar">
-                                    Escolha o Motivo do Reembolso
-                                    <span class="seta">▼</span>
-                                </summary>
 
-                                <div id="conteudo" class="conteudo-opcoes">
-                                    <button id="priorityLow" class="item-opcao">Tolerável</button>
-                                    <button id="priorityMedium" class="item-opcao">Importante</button>
-                                    <button id="priorityHigh" class="item-opcao">Imediato</button>
+
+
+                    <div class="questionReembolso">
+                        <div class="questionContainer">
+                            <div style="display: flex;">
+                                <div class="container">
+                                    <details class="menu-retratil">
+                                        <summary class="botao-recomendar">
+                                            Escolha o motivo do reembolso
+                                            <span class="seta">▼</span>
+                                        </summary>
+
+                                        <div class="conteudo-opcoes">
+                                            <button id="priorityLow" class="item-opcao">Tolerável</button>
+                                            <button id="priorityMedium" class="item-opcao">Importante</button>
+                                            <button id="priorityHigh" class="item-opcao">Imediato</button>
+                                        </div>
+                                    </details>
                                 </div>
-                            </details>
+                            </div>
                         </div>
-                    </div>
-                    <div style="display: flex; margin-top:20px; margin-left: 50%; position: relative;">
-                        <button id="icon" class="info"><i class="bi bi-info-circle"></i></button>
-                        <h5 style="font-size: 25px; position: relative; top: -55px;">Oultros...</h5>
+
+
+
+                        <div class="questionContainer">
+                            <div class="questionTitle">
+                                <button class="info"><i class="bi bi-info-circle"></i></button>
+                                <h5 style="font-size: 25px; ">Outros...</h5>
+                            </div>
+                            <input class="setHelpBox" type="text">
+                        </div>
+
                     </div>
 
-                    <input
-                        style="border-radius: 20px; border: 1px solid black; width: 300px; height: 40px; left: 50%; position: relative; top: -55px;"
-                        type="text">
-                    <div>
-                        <div style="display: flex; margin-top:-10px;">
+                    <div class="questionContainer">
+                        <div class="questionTitle">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
-                            <h5 style="font-size: 25px;">Digite seu email:</h5>
+                            <h5 style="font-size: 25px; ">Digite seu email:</h5>
                         </div>
-
-                        <input style="border: 1px solid black; border-radius: 20px; width: 600px; height: 30px;"
-                            type="email" name="" id="">
+                        <input class="setHelp" type="email" name="" id="">
                     </div>
-                    <div style="display: flex; gap: 10px;margin-top: 20px;">
+
+
+
+                    <div style="display: flex; gap: 10px; margin-top: 20px;">
                         <div style="display: flex;">
                             <div class="container">
                                 <details class="menu-retratil">
@@ -171,11 +186,30 @@
 
     <script>
 
+        const textarea = document.getElementById('MeuInput');
+
+        textarea.addEventListener('input', () => {
+            // Busca TODOS os elementos que contêm a classe específica
+            const elementos = document.querySelectorAll('.questionTitle');
+
+            // Verifica se o usuário digitou alguma coisa
+            const temTexto = textarea.value.length > 0;
+
+            // Passa de elemento em elemento aplicando ou removendo a classe de subida
+            elementos.forEach(elemento => {
+                if (temTexto) {
+                    elemento.classList.add('subiu');
+                } else {
+                    elemento.classList.remove('subiu');
+                }
+            });
+        });
+
     //window.onload = function() {
     //let userName = prompt('Digite seu nome:');
     //let showUserName = document.getElementById('showUserName');
     //showUserName.innerHTML = userName
-};
+//};
 
     </script>
 
