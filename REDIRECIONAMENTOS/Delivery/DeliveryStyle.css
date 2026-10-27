@@ -60,6 +60,22 @@ body{
     color: black;
 }
 
+.bi-arrow-down{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 22%;
+    left: 48%;
+}
+
+.bi-arrow-90deg-down{
+    font-size: 45px;
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 70px;
+}
+
 .menuPrincipal{
     position: relative;
     height: 100%;
@@ -67,24 +83,113 @@ body{
     display: flex;
 }
 
+.menu{
+    position: relative;
+    height: 80%;
+    background-color: purple;
+    width: 25%;
+    top: 40px;
+    left: -20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
 .menuLocalizacao{
     position: relative;
     background-color: red;
     height: 80%;
-    width: 30%;
-    left: 150px;
+    width: 40%;
+    left: 120px;
     top: 40px;
     border-radius: 20px;
     border: 1px solid white;
 }
 
-.menuEscolha{
-    position: relative;
+.menuAjuda{
     background-color: blue;
-    left: 30%;
-    top: 50px;
     height: 80%;
-    width: 30%;
+    width: 24%;
+    position: relative;
+    left: 12%;
+    top: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+#text{
+    color: white;
+    margin-top: 100px;
+    margin-left: 230px;
+}
+
+#mapa-localiza{
+    position: relative;
+    top: 150px;
+    left: 140px;
+}
+
+#btnFinalizar{
+    position: relative;
+    left: 45%;
+    top: 170px;
+    height: 70px;
+    width: 150px;
+    background-color: blueviolet;
     border: 1px solid white;
     border-radius: 20px;
+}
+
+
+.grupoAjuda{
+    width: 445px;
+}
+
+.grupoPasso2{
+    width: 445px;
+}
+
+.grupoPasso3{
+    width: 445px;
+}
+
+#ajuda{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    left: 130px;
+    top: 80px;
+}
+
+#conteudoAjuda{
+    color: white;
+    position: relative;
+    top: 160px;
+    left: 50px;
+}
+#conteudoPasso2{
+    position: relative;
+    top: 340px;
+    left: 50px;
+    color: white;
+}
+#conteudoPasso3{
+    color: white;
+    position: relative;
+    top: 520px;
+    left: 50px;
+}
+
+#passo2{
+    color: white;
+    position: relative;
+    top: 230px;
+    left: 150px;
+    font-size: 35px;
+}
+#passo3{
+    position: relative;
+    top: 404px;
+    left: 150px;
+    font-size: 35px;
+    color: white;
 }
