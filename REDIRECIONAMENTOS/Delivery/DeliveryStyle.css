@@ -84,6 +84,7 @@ body{
 }
 
 .menu{
+    z-index: ;
     position: relative;
     height: 80%;
     background-color: purple;
@@ -114,6 +115,29 @@ body{
     top: 40px;
     border-radius: 20px;
     border: 1px solid white;
+}
+
+#pagamento{
+    color: white;
+    position: relative;
+    left: 60px;
+    top: 50px;
+    font-size: 40px;
+}
+
+.bi-arrow-down-up{
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 380px;
+    left: 210px;
+}
+
+#qrCode{
+    height: 300px;
+    position: absolute;
+    top: 470px;
+    left: 100px;
 }
 
 #text{
