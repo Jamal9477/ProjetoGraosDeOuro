@@ -193,6 +193,7 @@ body {
   height: 150px;
   vertical-align: top; 
   border-radius: 10px;
+  z-index: 1;
   border: 1px solid black;
   padding: 10px; 
   background-color: #33333354;
@@ -200,6 +201,7 @@ body {
 }
 /* Estilo inicial de todos os elementos que podem subir */
 .questionTitle {
+  z-index: 0;
   display: flex;
   transform: translateY(34px);
   transition: transform 0.3s ease; /* Efeito suave de movimento */
@@ -270,6 +272,8 @@ body {
 
 .questionReembolso {
   display: flex;
+  text-align: center;
+  justify-items: center;
   height: 100px;
   gap: 50px;
   margin-top: 20px;
@@ -281,11 +285,15 @@ body {
   height: 60px;
   border: 1px solid black;
   border-radius: 10px;
+  z-index: 1;
+  background-color: #33333354;
 }
 .setHelp {
   border: 1px solid black;
   border-radius: 10px;
   width: 600px;
+  z-index: 1;
+  background-color: #33333354;
   height: 30px;
 }
 

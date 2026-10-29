@@ -1,0 +1,75 @@
+:root{
+    --primaryBg-Color: ;
+    --primary-Bg-Container-Color: #46598d;
+    --primaryBorder-Color: #b4b2b2;
+    --primaryText-Color: ;
+}
+* {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
+  }
+  .standart {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background-color: var(--primary-Bg-Container-Color);
+    width: 1865px;
+    z-index: 0;
+    height: 53px;
+    border-radius: 10px;
+    top: 5px;
+    left: 25px;
+    border: 1px solid var(--primaryBorder-Color);
+}
+.containerPrimary{
+    display: flex;
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    left: 25px;
+    gap: 40px;
+}
+.containerP1{
+    width: 750px;
+    height: 849px;
+    background-color: white;
+}
+.containerP2{
+    position: relative;
+    width: 1078px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 849px;
+    background-color: rgb(167, 167, 167);
+}
+.container1{
+    width: 50%;
+    background-color: red;
+    height: 350px;
+}
+.container2{
+    width: 50%;
+    background-color: rgb(131, 0, 0);
+    height: 350px;
+}
+.container3{
+    top: 2.4%;
+    position: relative;
+    width: 100%;
+    background-color: rgb(63, 0, 0);
+    height: 450px;
+}

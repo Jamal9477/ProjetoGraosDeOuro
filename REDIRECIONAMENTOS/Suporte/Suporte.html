@@ -65,26 +65,26 @@
 
 
                     <div class="questionContainer">
-                        <div class="questionTitle">
+                        <div class="questionTitle" id="inputTitle1">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Digite sua reclamação:</h5>
                         </div>
-                        <textarea class="textoReclamacao" name="" id="MeuInput"></textarea>
+                        <textarea class="textoReclamacao" name="" id="inputContainer1"></textarea>
                     </div>
 
 
                     <div class="questionContainer">
-                        <div class="questionTitle">
+                        <div class="questionTitle" id="inputTitle2">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px;">Id do pedido(caso aplicavel):</h5>
                         </div>
-                        <input class="setHelp" type="text">
+                        <input class="setHelp" id="inputContainer2" type="text">
                     </div>
 
 
 
                     <div class="questionReembolso">
-                        <div class="questionContainer">
+                        <div style="position: relative; top: 30px;" class="questionContainer">
                             <div style="display: flex;">
                                 <div class="container">
                                     <details class="menu-retratil">
@@ -106,21 +106,21 @@
 
 
                         <div class="questionContainer">
-                            <div class="questionTitle">
+                            <div class="questionTitle" id="inputTitle3">
                                 <button class="info"><i class="bi bi-info-circle"></i></button>
                                 <h5 style="font-size: 25px; ">Outros...</h5>
                             </div>
-                            <input class="setHelpBox" type="text">
+                            <input class="setHelpBox" id="inputContainer3" type="text">
                         </div>
 
                     </div>
 
                     <div class="questionContainer">
-                        <div class="questionTitle">
+                        <div class="questionTitle" id="inputTitle4">
                             <button class="info"><i class="bi bi-info-circle"></i></button>
                             <h5 style="font-size: 25px; ">Digite seu email:</h5>
                         </div>
-                        <input class="setHelp" type="email" name="" id="">
+                        <input class="setHelp" type="email" name="" id="inputContainer4">
                     </div>
 
 
@@ -186,24 +186,30 @@
 
     <script>
 
-        const textarea = document.getElementById('MeuInput');
+        // Função genérica para evitar repetição de código
+function gerenciarSubida(idContainer, idTitle) {
+    const container = document.getElementById(idContainer);
+    const elemento = document.getElementById(idTitle);
 
-        textarea.addEventListener('input', () => {
-            // Busca TODOS os elementos que contêm a classe específica
-            const elementos = document.querySelectorAll('.questionTitle');
-
-            // Verifica se o usuário digitou alguma coisa
-            const temTexto = textarea.value.length > 0;
-
-            // Passa de elemento em elemento aplicando ou removendo a classe de subida
-            elementos.forEach(elemento => {
-                if (temTexto) {
-                    elemento.classList.add('subiu');
-                } else {
-                    elemento.classList.remove('subiu');
-                }
-            });
+    // Verifica se os elementos realmente existem na tela antes de rodar
+    if (container && elemento) {
+        container.addEventListener('input', () => {
+            const temTexto = container.value.length > 0;
+            
+            if (temTexto) {
+                elemento.classList.add('subiu');
+            } else {
+                elemento.classList.remove('subiu');
+            }
         });
+    }
+}
+
+// Ativa a função para os seus 4 campos
+gerenciarSubida('inputContainer1', 'inputTitle1');
+gerenciarSubida('inputContainer2', 'inputTitle2');
+gerenciarSubida('inputContainer3', 'inputTitle3');
+gerenciarSubida('inputContainer4', 'inputTitle4');
 
     //window.onload = function() {
     //let userName = prompt('Digite seu nome:');
