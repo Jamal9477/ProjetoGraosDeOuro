@@ -1,0 +1,68 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+body{
+    background-color: purple;
+    overflow: hidden;
+}
+
+.menuLateral{
+    position: absolute;
+    background-color: gray;
+    top: 30px;
+    left: 20px;
+    height: 94%;
+    width: 5%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.menuFormaDePagamento{
+    z-index: 0;
+    position: absolute;
+    top: 350px;
+    left: 26%;
+    height: 200px;
+    width: 30%;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.menuPago{
+    z-index: 1;
+    position: absolute;
+    background-color: blue;
+    height: 87%;
+    width: 30%;
+    top: 100px;
+    left: 50%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.menuPreco{
+    z-index: 2;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: gray;
+    height: 140px;
+    width: 20%;
+    top: 60px;
+    left: 36%;
+}
+
+.btnCompra{
+    position: absolute;
+    border-radius: 20px;
+    bottom: 1px solid white;
+    background-color: aqua;
+    height: 70px;
+    width: 370px;
+    top: 60%;
+    left: 30%;
+}
