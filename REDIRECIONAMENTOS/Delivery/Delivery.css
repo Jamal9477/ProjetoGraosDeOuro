@@ -46,6 +46,8 @@ body {
     width: 750px;
     height: 849px;
     background-color: white;
+    border: 1px solid var(--primaryBorder-Color);
+    border-radius: 20px;
 }
 .containerP2{
     position: relative;
@@ -54,22 +56,73 @@ body {
     flex-direction: column;
     gap: 30px;
     height: 849px;
-    background-color: rgb(167, 167, 167);
+    background-color: rgba(167, 167, 167, 0.466);
 }
 .container1{
     width: 50%;
     background-color: red;
+    border: 1px solid var(--primaryBorder-Color);
     height: 350px;
+    border-radius: 20px;
 }
 .container2{
     width: 50%;
     background-color: rgb(131, 0, 0);
+    border: 1px solid var(--primaryBorder-Color);
     height: 350px;
+    border-radius: 20px;
 }
 .container3{
     top: 2.4%;
     position: relative;
     width: 100%;
     background-color: rgb(63, 0, 0);
-    height: 450px;
+    border: 1px solid var(--primaryBorder-Color);
+    border-radius: 20px;
+    height: 445px;
+}
+.caracterContainer{
+    display: grid;
+    grid-template-columns: 33% 1% 32% 1% 32%;
+    grid-template-rows: 50px;
+    background-color: gray;
+    height: 50px;
+    border-radius: 19px 19px 0px 0px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+.caracterContainer h6{
+    margin-top: 7px;
+    font-size: 27px;
+}
+.caracterLinha{
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+.RequestContainer{
+    display: grid;
+    grid-template-columns: 33% 1% 32% 1% 32%;
+    grid-template-rows: 50px;
+    background-color: gray;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.281);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.RequestContainer h6{
+    margin-top: 7px;
+    font-size: 27px;
+}
+.UserName{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
 }
