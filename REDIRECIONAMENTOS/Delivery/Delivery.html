@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOVO: biblioteca do mapa interativo (Leaflet + OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="Delivery.css">
-    <title>Document</title>
+    <title>Delivery</title>
 </head>
 <body>
 
@@ -22,7 +24,9 @@
                 <div class="caracterLinha"></div>
                 <h6>Localização</h6>
             </div>
-            <div class="RequestContainer">
+
+            <!-- Cada linha agora tem data-pedido (liga ao conteúdo da sacola e ao motoboy) -->
+            <div class="RequestContainer" data-pedido="p1">
                 <div class="UserName">
                     <span class="FirstName">
                         <h6>Diogo</h6>
@@ -32,11 +36,11 @@
                     </span>
                 </div>
                 <div class="caracterLinha"></div>
-                <h6 class="RequestId">12345678901</h6>
+                <h6 class="RequestId"><button type="button" class="btnPedido" data-acao="sacola">12345678901</button></h6>
                 <div class="caracterLinha"></div>
-                <h6 class="OrderLoc">12345-123</h6>
+                <h6 class="OrderLoc"><button type="button" class="btnPedido" data-acao="mapa">01310-100</button></h6>
             </div>
-            <div class="RequestContainer">
+            <div class="RequestContainer" data-pedido="p2">
                 <div class="UserName">
                     <span class="FirstName">
                         <h6>Diogo</h6>
@@ -46,11 +50,11 @@
                     </span>
                 </div>
                 <div class="caracterLinha"></div>
-                <h6 class="RequestId">12345678901</h6>
+                <h6 class="RequestId"><button type="button" class="btnPedido" data-acao="sacola">12345678901</button></h6>
                 <div class="caracterLinha"></div>
-                <h6 class="OrderLoc">12345-123</h6>
+                <h6 class="OrderLoc"><button type="button" class="btnPedido" data-acao="mapa">01001-000</button></h6>
             </div>
-            <div class="RequestContainer">
+            <div class="RequestContainer" data-pedido="p3">
                 <div class="UserName">
                     <span class="FirstName">
                         <h6>Diogo</h6>
@@ -60,9 +64,9 @@
                     </span>
                 </div>
                 <div class="caracterLinha"></div>
-                <h6 class="RequestId">12345678901</h6>
+                <h6 class="RequestId"><button type="button" class="btnPedido" data-acao="sacola">12345678901</button></h6>
                 <div class="caracterLinha"></div>
-                <h6 class="OrderLoc">12345-123</h6>
+                <h6 class="OrderLoc"><button type="button" class="btnPedido" data-acao="mapa">02765-010</button></h6>
             </div>
         </section>
 
@@ -70,14 +74,15 @@
 
             <div style="display: flex; gap: 40px; position: relative;">
             <div class="container1">
-                <div>
-                   <h6>Conteúdo do pedido</h6>
+                <!-- NOVO: aqui aparece a sacola -->
+                <div id="sacola" class="sacolaConteudo">
+                    <p class="avisoVazio">Clique no Id de um pedido para ver o que tem na sacola.</p>
                 </div>
             </div>
             <div class="container2">
-                <div>
-                    <h6>Localização da casa em que deveria ir + Localização do motoboy</h6>
-                </div>
+                <!-- NOVO: aqui aparece o mapa -->
+                <p id="mapaAviso" class="avisoVazio">Clique no CEP de um pedido para ver o mapa.</p>
+                <div id="mapa" class="mapaOculto"></div>
             </div>
 
             </div>
@@ -86,5 +91,200 @@
             </div>
         </section>
     </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        /* ------------------------------------------------------------------
+           DADOS DOS PEDIDOS (exemplo)
+           Cada chave (p1, p2, p3) corresponde ao data-pedido de uma linha.
+           - itens: o que está dentro da sacola
+           - moto:  [latitude, longitude] atual do motoboy
+             (aqui é fixo para demonstrar; no sistema real, troque pelos
+              dados do GPS/entregador vindos do seu back-end)
+        ------------------------------------------------------------------ */
+        const PEDIDOS = {
+            p1: {
+                itens: [
+                    { nome: 'Cappuccino grande', qtd: 2, preco: 12.90 },
+                    { nome: 'Pão de queijo (porção)', qtd: 1, preco: 9.50 },
+                    { nome: 'Bolo de cenoura (fatia)', qtd: 1, preco: 11.00 }
+                ],
+                moto: [-23.5489, -46.6388]
+            },
+            p2: {
+                itens: [
+                    { nome: 'Espresso duplo', qtd: 1, preco: 8.50 },
+                    { nome: 'Croissant de chocolate', qtd: 2, preco: 10.00 }
+                ],
+                moto: [-23.5614, -46.6559]
+            },
+            p3: {
+                itens: [
+                    { nome: 'Café coado 500 ml', qtd: 1, preco: 14.00 },
+                    { nome: 'Sanduíche natural', qtd: 2, preco: 18.00 },
+                    { nome: 'Suco de laranja', qtd: 2, preco: 9.00 },
+                    { nome: 'Brownie', qtd: 1, preco: 8.00 }
+                ],
+                moto: [-23.5874, -46.6576]
+            }
+        };
+
+        const brl = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+        /* ---------------------------- SACOLA ---------------------------- */
+        function mostrarSacola(idPedido) {
+            const alvo = document.getElementById('sacola');
+            const pedido = PEDIDOS[idPedido];
+            if (!pedido) {
+                alvo.innerHTML = '<p class="avisoVazio">Não encontramos os itens deste pedido.</p>';
+                return;
+            }
+            let total = 0;
+            const linhas = pedido.itens.map(i => {
+                const sub = i.qtd * i.preco;
+                total += sub;
+                return `<li><span>${i.qtd}x ${i.nome}</span><span>${brl(sub)}</span></li>`;
+            }).join('');
+            alvo.innerHTML = `<ul class="listaSacola">${linhas}</ul>
+                              <p class="totalSacola"><span>Total</span><span>${brl(total)}</span></p>`;
+        }
+
+        /* ----------------------------- MAPA ----------------------------- */
+        let mapa = null;
+        let camada = null;
+        const cacheCep = {};
+        let ultimaBusca = 0;
+
+        function iniciarMapa() {
+            if (mapa) return;
+            mapa = L.map('mapa').setView([-23.55, -46.63], 12);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; OpenStreetMap'
+            }).addTo(mapa);
+            camada = L.layerGroup().addTo(mapa);
+        }
+
+        async function buscarCoordenadas(cep) {
+            const limpo = cep.replace(/\D/g, '');
+            if (limpo.length !== 8) throw new Error('CEP inválido.');
+            if (cacheCep[limpo]) return cacheCep[limpo];
+
+            let resultado = null;
+
+            // 1ª tentativa: AwesomeAPI (já devolve latitude/longitude do CEP)
+            try {
+                const r = await fetch(`https://cep.awesomeapi.com.br/json/${limpo}`);
+                if (r.ok) {
+                    const d = await r.json();
+                    if (d.lat && d.lng) {
+                        resultado = {
+                            lat: parseFloat(d.lat),
+                            lng: parseFloat(d.lng),
+                            endereco: `${d.address}, ${d.district} - ${d.city}/${d.state}`
+                        };
+                    }
+                }
+            } catch (e) { /* tenta o plano B */ }
+
+            // 2ª tentativa: ViaCEP (endereço) + Nominatim (coordenadas)
+            if (!resultado) {
+                const rv = await fetch(`https://viacep.com.br/ws/${limpo}/json/`);
+                const v = await rv.json();
+                if (v.erro) throw new Error('CEP não encontrado.');
+                const q = encodeURIComponent(`${v.logradouro}, ${v.localidade}, ${v.uf}, Brasil`);
+                const rg = await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${q}`);
+                const g = await rg.json();
+                if (!g.length) throw new Error('Não foi possível localizar o endereço no mapa.');
+                resultado = {
+                    lat: parseFloat(g[0].lat),
+                    lng: parseFloat(g[0].lon),
+                    endereco: `${v.logradouro}, ${v.bairro} - ${v.localidade}/${v.uf}`
+                };
+            }
+
+            cacheCep[limpo] = resultado;
+            return resultado;
+        }
+
+        function distanciaKm(a, b) {
+            const R = 6371, rad = x => x * Math.PI / 180;
+            const dLat = rad(b[0] - a[0]), dLng = rad(b[1] - a[1]);
+            const h = Math.sin(dLat / 2) ** 2 +
+                      Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(dLng / 2) ** 2;
+            return 2 * R * Math.asin(Math.sqrt(h));
+        }
+
+        const icone = emoji => L.divIcon({
+            className: 'pinEmoji',
+            html: emoji,
+            iconSize: [34, 34],
+            iconAnchor: [17, 17]
+        });
+
+        async function mostrarMapa(idPedido, cep) {
+            const aviso = document.getElementById('mapaAviso');
+            const divMapa = document.getElementById('mapa');
+            const busca = ++ultimaBusca;
+
+            aviso.style.display = 'block';
+            aviso.textContent = 'Buscando localização...';
+
+            try {
+                const destino = await buscarCoordenadas(cep);
+                if (busca !== ultimaBusca) return; // outro clique aconteceu enquanto buscava
+
+                iniciarMapa();
+                divMapa.classList.remove('mapaOculto');
+                aviso.style.display = 'none';
+                mapa.invalidateSize();
+                camada.clearLayers();
+
+                const pontoCasa = [destino.lat, destino.lng];
+                L.marker(pontoCasa, { icon: icone('🏠') })
+                    .bindPopup(`<b>Entrega</b><br>${destino.endereco}<br>CEP ${cep}`)
+                    .addTo(camada);
+
+                const pedido = PEDIDOS[idPedido];
+                const limites = [pontoCasa];
+
+                if (pedido && pedido.moto) {
+                    const pontoMoto = pedido.moto;
+                    const km = distanciaKm(pontoMoto, pontoCasa).toFixed(1).replace('.', ',');
+                    L.marker(pontoMoto, { icon: icone('🏍️') })
+                        .bindPopup(`<b>Motoboy</b><br>A ${km} km do destino`)
+                        .addTo(camada);
+                    L.polyline([pontoMoto, pontoCasa], { color: '#b30000', weight: 4, dashArray: '8 8' })
+                        .addTo(camada);
+                    limites.push(pontoMoto);
+                }
+
+                if (limites.length > 1) mapa.fitBounds(limites, { padding: [40, 40] });
+                else mapa.setView(pontoCasa, 16);
+
+            } catch (erro) {
+                if (busca !== ultimaBusca) return;
+                aviso.style.display = 'block';
+                aviso.textContent = erro.message || 'Erro ao carregar o mapa.';
+            }
+        }
+
+        /* ---------------------------- CLIQUES ---------------------------- */
+        document.querySelector('.containerP1').addEventListener('click', e => {
+            const btn = e.target.closest('.btnPedido');
+            if (!btn) return;
+
+            const linha = btn.closest('.RequestContainer');
+            const idPedido = linha.dataset.pedido;
+
+            // marca visualmente o botão ativo daquele tipo
+            document.querySelectorAll(`.btnPedido[data-acao="${btn.dataset.acao}"]`)
+                .forEach(b => b.classList.remove('ativo'));
+            btn.classList.add('ativo');
+
+            if (btn.dataset.acao === 'sacola') mostrarSacola(idPedido);
+            if (btn.dataset.acao === 'mapa') mostrarMapa(idPedido, btn.textContent.trim());
+        });
+    </script>
 </body>
 </html>
