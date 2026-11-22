@@ -5,13 +5,13 @@
 }
 
 body{
-    background-color: purple;
+    background-color: rgb(32, 18, 66);
     overflow: hidden;
 }
 
 .menuLateral{
     position: absolute;
-    background-color: gray;
+    background-color: rgb(65, 64, 64);
     top: 30px;
     left: 20px;
     height: 94%;
@@ -28,7 +28,7 @@ body{
     left: 30px;
 }
 
-.bi-geo-alt-fill{
+.bi-person-circle{
     position: absolute;
     font-size: 40px;
     color: white;
@@ -67,7 +67,7 @@ body{
 .menuPago{
     z-index: 1;
     position: absolute;
-    background-color: blue;
+    background-color: rgb(32, 18, 100);
     height: 87%;
     width: 30%;
     top: 100px;
@@ -81,7 +81,7 @@ body{
     position: absolute;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: gray;
+    background-color: rgb(133, 133, 133);
     height: 140px;
     width: 20%;
     top: 60px;
@@ -220,7 +220,7 @@ body{
 #input{
     position: relative;
     height: 40px;
-    width: 360px;
+    width: 310px;
     border: none;
     border-radius: 10px;
     top: 30px;
@@ -236,6 +236,7 @@ body{
     width: 90%;
     top: 4px;
     left: 20px;
+    cursor: pointer;
 }
 
 #btnPagar:hover{

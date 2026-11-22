@@ -1,0 +1,31 @@
+* {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 110vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top left, #4545ec, rgb(32, 18, 66));
+}
+
+.standart{
+    background-color: rgb(80, 80, 179);
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
