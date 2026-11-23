@@ -1082,6 +1082,13 @@ span {
 .cardEspecials{
     overflow: hidden;
 }
-.CARDSobremesas .name{
-    background-color: white;
+.CARDPromo .name,
+.CARDTop .name,
+.CARDCoffe .name,
+.CARDLanches .name,
+.CARDBrakefast .name,
+.CARDDinner .name,
+.CARDSobremesas .name,
+.CARDEspecials .name{
+    background-color: #D9D9D9;
 }
